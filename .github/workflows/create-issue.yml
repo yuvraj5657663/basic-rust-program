@@ -1,4 +1,4 @@
-name: "comment | /create-issue"
+name: "issue comment | /create-issue"
 on:
   workflow_call:
     # Start coding workflow to create branch, pr and link to the issue

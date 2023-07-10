@@ -4,7 +4,7 @@ on:
     # Start coding workflow to create branch, pr and link to the issue
 jobs:
   dispatch-create-issue:
-    runs-on: [self-hosted, m01]
+    runs-on: [self-hosted, pi4b-01]
     # timeout-minutes: 5
 
     steps:

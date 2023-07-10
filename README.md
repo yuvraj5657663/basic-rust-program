@@ -48,4 +48,3 @@ If you would like to learn or experience cutting edge technologies, please conta
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/StaytunedLLP/training)
 
-

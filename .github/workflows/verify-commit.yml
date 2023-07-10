@@ -1,0 +1,20 @@
+name: Verify Comment and dispatch event
+on:
+  discussion_comment:
+    types: [created]
+
+jobs:
+  create-issue:
+    if: github.event.comment.body == '/create-issue'
+    uses: StaytunedLLP/training/.github/workflows/create-issue.yml@main
+    secrets: inherit
+
+  create-issue-test:
+    if: github.event.comment.body == '/create-issue-test'
+    uses: StaytunedLLP/training/.github/workflows/create-issue-test.yml@main
+    secrets: inherit
+
+  start-coding:
+    if: github.event.comment.body == '/start-coding'
+    uses: StaytunedLLP/training/.github/workflows/create-branch-pr.yml@main
+    secrets: inherit

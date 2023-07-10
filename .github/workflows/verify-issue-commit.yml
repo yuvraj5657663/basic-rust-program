@@ -1,0 +1,10 @@
+name: "verify | issue comments"
+on:
+    issue_comment:
+        types: [created]
+
+jobs:
+    start-coding:
+        if: github.event.comment.body == '/start-coding'
+        uses: StaytunedLLP/training/.github/workflows/create-branch-pr.yml@main
+        secrets: inherit

@@ -1,4 +1,4 @@
-name: "verify | issue comments"
+name: "issue verify | comments"
 on:
     issue_comment:
         types: [created]

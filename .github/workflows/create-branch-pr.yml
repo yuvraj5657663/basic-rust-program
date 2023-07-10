@@ -1,4 +1,4 @@
-name: "comment | /start-coding"
+name: "discussion comment | /start-coding"
 on:
     workflow_call:
 

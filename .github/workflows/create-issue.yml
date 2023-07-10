@@ -17,7 +17,6 @@ jobs:
           OWNER=$(echo ${{ github.repository }} | cut -d/ -f1)
           REPO=$(echo ${{ github.repository }} | cut -d/ -f2)
           echo "github_owner=$OWNER" >> $GITHUB_ENV
-          echo "discussion_id=${{ github.event.discussion.number }}" >> $GITHUB_ENV
           echo "discussion_number=${{ github.event.discussion.number }}" >> $GITHUB_ENV
           echo "comment_id=${{ github.event.comment.node_id }}" >> $GITHUB_ENV
           echo "comment_repo=$REPO" >> $GITHUB_ENV
@@ -37,7 +36,7 @@ jobs:
           PRIVATE_KEY: ${{ secrets.DISPATCH_BOT_PPK }}
           INSTALLATION_ID: ${{ secrets.DISPATCH_BOT_INSTALLATION_ID }}
           EVENT_TYPE: create-issue
-          CLIENT_PAYLOAD: '{"title": "Learn: ${{env.discussion_title}}","owner": "${{env.github_owner}}", "repo": "training", "number": "${{env.discussion_number}}", "discussion_id": "${{env.discussion_id}}",  "assignee": "${{env.issue_assignee}}", "commentId": "${{env.comment_id}}" , "commentRepo": "${{env.comment_repo}}"}'
+          CLIENT_PAYLOAD: '{"title": "Learn: ${{env.discussion_title}}","owner": "${{env.github_owner}}", "repo": "training", "number": "${{env.discussion_number}}",  "assignee": "${{env.issue_assignee}}", "commentId": "${{env.comment_id}}" , "commentRepo": "${{env.comment_repo}}"}'
         run: |
           chmod +x ./scripts/build-github-app.sh
           docker run \

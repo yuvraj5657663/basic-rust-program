@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Keyboard</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,0" />
+    <style>
+        body  {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            height: 100vh;
+            place-content: center;
+        }
+
+        .keyboard-container {
+
+            
+            justify-content: center ;
+            max-width: 1120px;
+            height: max-content;
+            padding: 20px;
+            background-color: rgb(197, 197, 197);
+            border-radius: 20px;
+            display: grid;
+            grid-template-columns: repeat(30, 30px);
+            grid-template-rows: repeat(12,30px);
+            grid-gap: 6px;
+        }
+
+
+        .key {
+            display: grid;
+            background-color: rgb(243, 243, 243);
+            border: 2px solid black;
+            border-radius: 5px;
+            grid-column: span 2;
+            grid-row: span 2;
+            font-size: 20px;
+            text-align: center;
+            place-content: center;
+
+        }
+
+        .key:hover {
+            border: 1px solid #eeeeee;
+
+        }
+
+        .esc {
+            border-top-left-radius: 25px;
+            grid-column: span 3;
+        }
+        .material-symbols-outlined{
+            grid-column: span 3;
+            border-top-right-radius: 25px;
+        }
+
+        .delete {
+            grid-column: span 4;
+        }
+
+        .tab {
+            grid-column: span 4;
+        }
+
+        .backslash {
+            grid-column: span 2;
+        }
+
+        .capslock {
+            grid-column: span 3;
+        }
+
+        .return {
+            grid-column: span 5;
+        }
+
+        .leftshift {
+            grid-column: span 4;
+        }
+
+        .rightshift {
+            grid-column: span 4;
+        }
+
+        .command {
+            grid-column: span 2;
+        }
+
+        .space {
+            grid-column: span 12;
+
+        }
+        
+        .arrow1{
+            grid-row: 11/12;
+            grid-column: 27/29;
+        }
+        .arrow2{
+            grid-row: 12/13;
+            grid-column: 27/29;
+        }
+        .arrow4{
+            border-bottom-right-radius: 25px;
+        }
+        .fn{
+            border-bottom-left-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="keyboard-container">
+        <div class="key esc">esc</div>
+        <div class="key">F1</div>
+        <div class="key">F2</div>
+        <div class="key">F3</div>
+        <div class="key">F4</div>
+        <div class="key">F5</div>
+        <div class="key">F6</div>
+        <div class="key">F7</div>
+        <div class="key">F8</div>
+        <div class="key">F9</div>
+        <div class="key">F10</div>
+        <div class="key">F11</div>
+        <div class="key">F12</div>
+        <div class="key material-symbols-outlined">lock</div>
+        <div class="key">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">+</div>
+        <div class="key delete">Delete</div>
+        <div class="key tab">Tab</div>
+        <div class="key">Q</div>
+        <div class="key">w</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key backslash">\</div>
+        <div class="key capslock">CapsLock</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key return">Return</div>
+        <div class="key leftshift">Shift</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+        <div class="key">"</div>
+        <div class="key rightshift">Shift</div>
+        <div class="key fn">fn</div>
+        <div class="key">Ctrl</div>
+        <div class="key option">option</div>
+        <div class="key command">cmd</div>
+        <div class="key space">Space</div>
+        <div class="key command">cmd</div>
+        <div class="key option">option</div>
+        <div class="key arrow1">▲</div>
+        <div class="key arrow3">◄</div>
+        <div class="key arrow2">▼</div>
+        <div class="key arrow4">►</div>
+    </div>
+
+
+</body>
+
+</html>

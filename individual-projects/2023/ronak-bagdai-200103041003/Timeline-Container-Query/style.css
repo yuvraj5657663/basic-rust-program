@@ -1,0 +1,113 @@
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.timeline-container {
+    /* container: timeline/inline-size; */
+    container-name: timeline;
+    container-type: inline-size;
+    width: 900px;
+    overflow: hidden;
+    resize: horizontal;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 2rem auto 0;
+}
+.timeline-item {
+    display: flex;
+    position: relative;
+    gap: 1.5rem;
+}
+.timeline-item:last-child .timeline-content:before {
+    display: none;
+}
+.timeline-content {
+    position: relative;
+    padding-left: 24px;
+    padding-bottom: 48px;
+    flex: 1;
+    order: 1;
+}
+.timeline-item:last-child .timeline-content {
+    padding-bottom: 0;
+}
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: grey;
+    right: 100%;
+    top: 0;
+}
+.timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border: 2px solid lightgray;
+    border-radius: 50%;
+    left: -13px;
+    top: 0;
+    z-index: 1;
+}
+.timeline-title {
+    font-size: max(1rem, 1.8cqw + 4px);
+    font-weight: bold;
+}
+.timeline-description {
+    color: grey;
+}
+@container timeline (inline-size > 400px) {
+    .timeline-content::after {
+        width: 22px;
+        height: 22px;
+        left: -14px;
+    }
+}
+@container timeline (inline-size > 800px) {
+    .timeline {
+        display: flex;
+        justify-content: center;
+    }
+    .timeline-item {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        flex: 1;
+        padding: 0;
+    }
+    .timeline-content::before,
+    .timeline-content::after {
+        display: none;
+    }
+    .timeline-item::before {
+        content: '';
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background-color: grey;
+        left: 50%;
+        top: 25px;
+    }
+    .timeline-item::after {
+        content: '';
+        width: 45px;
+        height: 45px;
+        background-color: #fff;
+        border: 2px solid lightgray;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    .timeline-item:last-child::before {
+        display: none;
+    }
+    .timeline-content {
+        padding: 10px 0 0;
+        text-align: center;
+    }
+    .timeline-item time {
+        padding-bottom: 0;
+    }
+}

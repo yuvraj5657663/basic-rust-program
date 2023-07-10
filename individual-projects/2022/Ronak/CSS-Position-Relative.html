@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative Tutorial</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            border: 2px solid aqua;
+            color: aqua;
+            padding: 20px;
+        }
+        .element{
+            border: 1px solid #000;
+            background-color: grey;
+            padding: 20px;
+            color: black;
+            position: relative;
+            top: 80px;
+            right: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        Parent element
+        <div class="element">Child element</div>
+    </div>
+</body>
+
+</html>

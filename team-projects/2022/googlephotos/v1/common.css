@@ -1,0 +1,96 @@
+/*-------- Fonts --------*/
+
+body {
+    font-family: 'Google Sans', arial, sans-serif;
+    font-size: 1rem;
+}
+.header {
+    font-weight: 500px;
+}
+.sub-header {
+    max-width: 400px;
+    font-weight: 500px;
+    font-size: 4vh;
+    line-height: 4.8vh;
+}
+.discription {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    margin-bottom: 3em;
+}
+.gallery-scan-sub-dis {
+    font-family: Roboto, sans-serif;
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.btn {
+    text-decoration: none;
+    font-weight: 500px;
+}
+/* ----------------all color css----------------- */
+.bgw {
+    background-color: #fff;
+} /*white*/
+.cw {
+    color: #fff;
+} /*white*/
+.bgb {
+    background-color: #1a73e8;
+} /*blue*/
+.cb {
+    color: #1a73e8;
+} /*blue*/
+.bc {
+    border-color: #1a73e8;
+} /*blue*/
+.blg {
+    border-color: #dadce0;
+} /*light grey*/
+.bglb {
+    background-color: f4f8fe;
+} /*light blue*/
+.bgdb {
+    background-color: #185abc;
+} /*dark blue*/
+.black {
+    color: black;
+}
+.grey {
+    color: grey;
+}
+
+/* -------Common Flex Properties------- */
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+.justify-content-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+.inline-flex {
+    display: inline-flex;
+}
+.flex-direction-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------top space---------------- */
+.space {
+    margin-top: 4rem;
+}
+
+/* ------------Grid properts------------ */
+.grid {
+    display: grid;
+    gap: 2rem;
+}

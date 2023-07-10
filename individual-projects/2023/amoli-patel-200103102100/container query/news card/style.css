@@ -1,0 +1,33 @@
+.page {
+    container-name: card;
+    container-type: inline-size;
+    resize: horizontal;
+    overflow: hidden;
+    width: 500px;
+    margin: 2rem auto;
+}
+img {
+    max-width: 300px;
+    border-radius: 8px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.content {
+    background-color: rgb(242, 242, 242);
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+}
+p {
+    color: grey;
+}
+@container card (min-width: 400px) {
+    .card {
+        flex-direction: row;
+    }
+    .content {
+        width: 100%;
+    }
+}

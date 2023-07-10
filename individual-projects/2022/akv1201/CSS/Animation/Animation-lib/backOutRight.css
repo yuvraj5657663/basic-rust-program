@@ -1,0 +1,22 @@
+.backOutRight {
+    animation-name: backOutRight;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes backOutRight {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0px);
+        transform: scale(0.7);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(2000px) scale(0.7);
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,86 @@
+:root{
+    --bg-color-primary:  #add8e6;
+    --bg-color-secondary: #f7f7f7;
+    --triangle-bg-color: #000000;
+}
+
+.container{
+    container: download / inline-size;
+    margin: 2rem auto;
+    resize: horizontal;
+    overflow: auto;
+    width: 70%;
+}
+
+.items{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.box{
+    clip-path: polygon(0 0, 86% 0, 100% 15%, 100% 100%, 0 100%);
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--bg-color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box::before{
+    --triangel-size: 1.56rem;
+    content: " ";
+    clip-path: polygon(0 0, 3.75em  3.75em , 0 3.75em);
+    height: var(--triangel-size);
+    width: var(--triangel-size);
+    background-color: var(--triangle-bg-color);
+    position: absolute;
+    margin: 0 0 8.5em 8.5em ; 
+}
+
+.img-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@container download ((max-width: 625px) and (min-width: 550px)){
+    .box{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        background-color: var(--bg-color-secondary);
+        height: 4rem;
+        width: calc(100% - 22rem);
+        min-width: 13.75rem;
+        border-radius: 20px;
+    }
+    .img-txt{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: calc(100% - 2em);
+    }
+    .img-txt img{
+        width: 1.87em;
+    }
+}
+
+@container ((max-width:500px) and (min-width: 345px)){
+    .box{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        display: flex;
+        background-color: var(--bg-color-secondary);
+        height: 3.17rem;
+        width: 100%;
+        min-width: 13.75rem;
+        border-radius: 20px;
+    }
+    .img-txt{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: calc(100% - 2em);
+    }
+    .img-txt img{
+        width: 1.87em;
+    }
+}

@@ -1,0 +1,280 @@
+.container-one {
+    container-type: inline-size;
+    container-name: table;
+    margin: 1rem auto;
+    max-width: 1300px;
+}
+th,
+td {
+    border: 1px solid black;
+}
+.table th:first-child {
+    border-top: none;
+}
+.table th {
+    border-left: none;
+}
+.table th:first-child a {
+    display: none;
+}
+.table td {
+    border-left: none;
+}
+
+.btn-1 {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 auto;
+}
+.btn-1:hover {
+    background-color: #f6f9fe;
+}
+.btn-2:hover {
+    background-color: #185abc;
+}
+.btn-3:hover {
+    background-color: #f6f9fe;
+}
+
+.user-2 {
+    text-align: center;
+    margin: 0 50px;
+}
+
+.data-1 {
+    display: flex;
+    margin: 0 55px;
+}
+.paragraph {
+    margin-left: 5px;
+}
+.content {
+    margin-top: 15px;
+    font-weight: bold;
+}
+.icon-1 {
+    margin-right: 10px;
+}
+.headline .heading-one {
+    color: #3c4043;
+}
+.line {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-2 {
+    background-color: #1a73e8;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 15px auto;
+}
+.btn-3 {
+    color: #1a73e8;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: fit-content;
+}
+.headline-content {
+    font-size: 36px;
+    color: #1a73e8;
+    margin: 0;
+}
+.headline-line {
+    font-size: 15px;
+}
+
+@container table (max-width:500px) {
+    .line {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@container table (max-width:700px) {
+    .btn-1 {
+        display: none;
+    }
+    .line .headline {
+        writing-mode: vertical-lr;
+        margin: 5px auto;
+    }
+
+    .icon-1 {
+        display: none;
+    }
+
+    :is(.headline-content, .btn-2, .btn-3) {
+        display: none;
+    }
+    .line .heading {
+        writing-mode: vertical-lr;
+        margin: 0 auto;
+    }
+    .table th:first-child a {
+        display: block;
+    }
+}
+
+/* second page start */
+.container {
+    container: page / inline-size;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+}
+
+.image {
+    width: 50vw;
+}
+
+.para {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.heading {
+    font-size: xx-large;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: rgb(151, 141, 141);
+}
+
+@container page (max-width:800px) {
+    .google {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .para {
+        margin: 0 2rem;
+        grid-row: 1/2;
+        max-width: fit-content;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+/* second page end */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+nav {
+    background: white;
+    container: navbar/inline-size;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+:is(.toggle, .logo, .item) a {
+    color: rgb(76, 73, 73);
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 20px;
+    padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+    padding: 10px;
+    display: block;
+}
+
+.item:not(.button) a:hover,
+.item a:hover::after {
+    color: rgb(32, 32, 32);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+
+.drive {
+    margin-right: 10px;
+}
+
+.toggle {
+    font-size: 20px;
+    display: none;
+}
+
+.menu li.button a {
+    padding: 10px 15px;
+}
+
+.button a {
+    background: #0080ff;
+    color: rgb(32, 32, 32);
+    border: 1px royalblue solid;
+}
+
+.button.secondary a {
+    background: transparent;
+    color: rgb(32, 32, 32);
+    border: 1px #0080ff solid;
+}
+
+@container navbar (max-width: 1400px) {
+    nav {
+        min-height: 64px;
+    }
+
+    .item {
+        display: none;
+    }
+
+    .menu {
+        justify-content: flex-start;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .toggle {
+        display: block;
+    }
+}

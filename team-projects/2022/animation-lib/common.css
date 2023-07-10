@@ -1,0 +1,7 @@
+:root {
+    --count: infinite;
+    --duration: 2s;
+    --origin: center;
+    --time-funct: ease-in;
+    --time-function: ease-out;
+}

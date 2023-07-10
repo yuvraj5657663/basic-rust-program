@@ -1,0 +1,55 @@
+.container{
+    container: cards / inline-size;
+    width: 60%;
+    resize: horizontal;
+    overflow: hidden;
+}
+
+.card{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.card img{
+    width: 30cqw;
+}
+
+.txt{
+    container: txt1 / inline-size;
+    font-size: 2cqi;
+    width: 60%;
+}
+
+.txt a{
+    display: none;
+    text-decoration: none;
+}
+
+@container cards (max-width: 650px){
+    .card{
+        flex-direction: column;
+    }
+    .card img{
+        aspect-ratio: 1 / 1;
+        object-fit: cover;        
+    }
+}
+/* 
+@container txt (max-width: 650px){
+    .txt p {
+        display: block;
+    }
+} */
+
+@container txt1 (max-width: 325px){
+    .txt{
+        font-size: 2cqi;
+    }
+    .txt p{
+        display: none;
+    }
+    .txt a {
+        display: block;
+    }
+}

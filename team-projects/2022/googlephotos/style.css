@@ -1,0 +1,368 @@
+body {
+    font-family: 'Google Sans', arial, sans-serif;
+}
+.shield {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 9rem;
+}
+
+.text > p {
+    max-width: 34rem;
+    color: #5f6368;
+    font-family: Roboto, sans-serif;
+    line-height: 28px;
+    margin-bottom: 32px;
+}
+
+.text > h2 {
+    max-width: 22rem;
+}
+
+.text > a {
+    border: 1px solid rgb(208 208 208);
+    border-radius: 4px;
+    padding: 9px;
+    margin-top: 13em;
+}
+.text > a:hover {
+    background: #f4f8fe;
+    border: 1px solid #1a73e8;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+    align-items: center;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery {
+    flex-direction: column;
+    width: 10rem;
+}
+.gallery > p {
+    max-width: 10rem;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.product {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #fbfbfb;
+    padding: 15rem;
+}
+
+.items > * p {
+    color: #5f6368;
+}
+
+a {
+    text-decoration: none;
+}
+.memories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15rem;
+}
+.memories > img:first-child {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.memories > img:nth-child(2) {
+    width: 60px;
+}
+
+.memories > h2 {
+    max-width: 24rem;
+    text-align: center;
+}
+
+.memories > button {
+    background-color: #1a73e8;
+    color: #fff;
+    border-radius: 4px;
+    border: 0;
+    height: 3em;
+    width: 12em;
+    margin-bottom: 2em;
+}
+
+.memories > button:hover {
+    background-color: #185abc;
+}
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story > img {
+    margin: 1em;
+}
+
+footer {
+    background: #f8f9fa;
+    color: #5f6368;
+    padding: 1rem 2rem;
+}
+ul {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* max-width: 31rem; */
+    list-style: none;
+}
+ul > img {
+    padding-right: 2em;
+}
+
+ul > li {
+    padding: 1em;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+ul > select {
+    padding: 0em;
+}
+select {
+    border: none;
+    background: none;
+    outline: none;
+}
+ol {
+    font-size: 0.7em;
+    line-height: 1.6em;
+    padding-left: 6em;
+}
+ul a {
+    color: #5f6368;
+    font-size: 0.9rem;
+}
+
+.container {
+    text-align: center;
+}
+
+p {
+    color: grey;
+    font-family: Roboto, sans-serif;
+    line-height: 16px;
+    margin-bottom: 26px;
+}
+img {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(https://www.google.com/photos/static/2020/images/index/woodTile.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: left bottom, right bottom;
+}
+button {
+    background-color: #fff;
+    color: blue;
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: aliceblue;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    font-family: Roboto, sans-serif;
+}
+.box > h1 {
+    font-size: 2.5em;
+}
+.icon_search {
+    height: 3rem;
+}
+.img_search_birthday {
+    height: 25rem;
+}
+.box > p {
+    color: #5f6368;
+    font-size: 1em;
+    line-height: 2rem;
+    min-width: 20ch;
+    max-width: 80ch;
+    text-align: center;
+}
+.img_birthdaygirl {
+    height: 30rem;
+    width: 30rem;
+}
+html {
+    font-family: 'Google Sans', arial, sans-serif;
+    font-weight: 400;
+}
+header {
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    border-bottom: 1px solid #dadce0;
+}
+.logo {
+    height: 25px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.5rem;
+}
+li:nth-child(1) {
+    float: left;
+}
+li:nth-child(2) {
+    float: right;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+}
+li:nth-child(3) {
+    float: right;
+    border-style: none;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 4px;
+}
+.container {
+    margin-top: 20px;
+    height: 80vh;
+}
+button {
+    background-color: #1a73e8;
+    border-style: none;
+    color: white;
+    width: 250px;
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 4px;
+}
+
+.google_photos {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.photos1 {
+    display: flex;
+    justify-content: space-between;
+}
+.photos2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -------------section 2------------- */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#memories-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.device-info {
+    width: 35ch;
+}
+.phone {
+    padding-left: 150px;
+}
+.tablet {
+    align-self: flex-end;
+}
+
+/* ------------section 4----------- */
+#share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30vh;
+}
+.family-pic {
+    padding-top: 2rem;
+}
+.framed {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(238, 234, 234);
+    height: 25em;
+}
+img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 30vw;
+}
+button {
+    color: rgb(18, 186, 241);
+    align-self: center;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95rem;
+    padding-top: 12rem;
+}
+
+.text > img:first-child {
+    height: 2.5em;
+}
+
+.text > h2 {
+    font-size: 4vh;
+    max-width: 11em;
+}
+
+.text {
+    padding-left: 12em;
+}
+
+.text > p {
+    color: #5f6368;
+    font-size: 1em;
+    max-width: 29em;
+    line-height: 1.5em;
+    padding-bottom: 2em;
+}
+.framed > a {
+    max-width: 6em;
+    justify-content: center;
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    border: 1px solid #dadce0;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 0.9em;
+}
+
+a:hover {
+    border-color: #1a73e8;
+    background-color: #f4f8fe;
+}
+
+img {
+    height: 25rem;
+}

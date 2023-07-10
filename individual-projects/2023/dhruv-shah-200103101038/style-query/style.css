@@ -1,0 +1,48 @@
+:root {
+    /* --dark-color: #000; */
+    /* --bg-color-dark: lightcoral; */
+    /* --color-dark: lightblue; */
+    /* --light-color: #fff; */
+    --bg-color-light: blue;
+    --color-light: brown;
+    --theme: dark-mode;
+    --font: font-size;
+}
+
+.card {
+    /* background-color: black;
+    color: white; */
+    height: 100vh;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+.content {
+    /* background-color: var(--color-light); */
+    height: 8em;
+}
+
+@container style(--theme:light-mode) and style(--font:font-size) {
+    .card {
+        background-color: black;
+    }
+    .content {
+        background-color: darkgreen;
+        color:red;
+    }
+    .content:nth-child(2) {
+        background-color: darkblue;
+    }
+}
+@container style(--theme:dark-mode) and style(--font:font-size) {
+    .card {
+        background-color: white;
+    }
+    .content {
+        background-color: green;
+        font-size: 2em;
+    }
+    .content:nth-child(2) {
+        background-color: lightcoral;
+    }
+}

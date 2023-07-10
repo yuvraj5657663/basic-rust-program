@@ -1,0 +1,281 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.front-view {
+  container-type: inline-size;
+  container-name: view;
+  display: flex;
+  gap: 1rem;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 11.5rem;
+  width: clamp(20rem, 30%, 25rem);
+  background-color: rgb(72, 72, 72);
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.box > .top{
+    font-size: 15px;
+}
+.icon {
+  background-color: cornflowerblue;
+  font-size: 2rem;
+  padding: 25px;
+  border-radius: 100%;
+  margin-bottom: 52px;
+}
+.top {
+  align-self: flex-start;
+}
+/* .name::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 100px;
+    background-color: lightblue;
+    border-radius: 100%;
+    top: 50px;
+    left: 150px;
+} */
+@container view (max-width: 1050px){
+  .box-none{
+    display: none;
+  }
+  @container view (max-width: 700px){
+    .box-none1{
+      display: none;
+    }
+  }
+}
+
+
+
+.tools {
+  container-type: inline-size;
+  container-name: tools;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.up-arrow {
+  display: none;
+}
+.fa-solid,
+.fa-regular {
+  background-color: rgb(51, 51, 51);
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 100%;
+}
+.fa-phone-slash{
+    background: red;
+}
+@container tools (max-width: 700px) {
+  .time {
+    display: none;
+  }
+}
+
+@container tools (max-width: 840px) {
+  .chat {
+    display: none;
+  }
+  .up-arrow {
+    display: block;
+  }
+  .box-none{
+    display: none;
+  }
+}
+
+main:has(.user-interaction:checked) {
+  .message {
+    display: block;
+  }
+  :is(.people, .meeting-details, .activity) {
+    display: none;
+  }
+  @container view (max-width: 480px) {
+    .boxes > .box {
+      display: none;
+    }
+  }
+  @container view (max-width: 1360px){
+    .box-none{
+      display: none;
+    }
+    @container view (max-width: 970px){
+      .box-none1{
+        display: none;
+      }
+    }
+  }
+}
+
+main:has(.identify-user:checked) {
+  .people {
+    display: block;
+  }
+  :is(.message, .meeting-details, .activity) {
+    display: none;
+  }
+  @container view (max-width: 480px) {
+    .boxes > .box {
+      display: none;
+    }
+  }
+  @container view (max-width: 1360px){
+    .box-none{
+      display: none;
+    }
+    @container view (max-width: 970px){
+      .box-none1{
+        display: none;
+      }
+    }
+  }
+}
+main:has(.meeting-info:checked) {
+  .meeting-details {
+    display: block;
+  }
+  :is(.people, .message, .activity) {
+    display: none;
+  }
+  @container view (max-width: 480px) {
+    .boxes > .box {
+      display: none;
+    }
+  }
+  @container view (max-width: 1360px){
+    .box-none{
+      display: none;
+    }
+    @container view (max-width: 970px){
+      .box-none1{
+        display: none;
+      }
+    }
+  }
+}
+
+main:has(.activities:checked) {
+  .activity {
+    display: block;
+  }
+  :is(.people, .message, .meeting-details) {
+    display: none;
+  }
+  @container view (max-width: 480px) {
+    .boxes > .box {
+      display: none;
+    }
+  }
+  @container view (max-width: 1360px){
+    .box-none{
+      display: none;
+    }
+    @container view (max-width: 970px){
+      .box-none1{
+        display: none;
+      }
+    }
+  }
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: lightblue;
+  border-radius: 100%;
+}
+
+.whiteboard,
+.miro {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.meeting-link {
+  text-decoration: none;
+  font-size: larger;
+}
+.fa-copy {
+  background-color: transparent;
+}
+.line{
+  margin: 20px 0;
+  border: 1px solid black;
+}
+
+.msg p {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.msg {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.people,
+.message,
+.meeting-details,
+.activity {
+  width: 35rem;
+  height: 39rem;
+  display: none;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  color: black;
+}
+.cancle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancle > .fa-xmark,
+.search > .fa-magnifying-glass {
+  background-color: transparent;
+  color: black;
+}
+.search-engin,
+.msg-engin {
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 19rem;
+}
+.user-info > div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+.user-info > div .fa-ellipsis-vertical {
+  background-color: white;
+}
+.user-img {
+  border-radius: 100%;
+}

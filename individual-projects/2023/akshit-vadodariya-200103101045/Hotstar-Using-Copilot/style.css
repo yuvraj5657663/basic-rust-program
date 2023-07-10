@@ -1,0 +1,101 @@
+/* https://lab.ishadeed.com/container-queries/ */
+/* https://github.com/sturobson/Awesome-Container-Queries */
+/* https://www.w3.org/TR/css-contain-3/ */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries */
+/* https://www.chromestory.com/2021/03/css-container-queries/ */
+/* https://www.oddbird.net/talks/responsive-components/ */
+/* https://moderncss.dev/container-query-solutions-with-css-grid-and-flexbox/ */
+/* https://codepen.io/miriamsuzanne/pen/ZEyXOKw?editors=1100 */
+/* https://codepen.io/una/pen/LYbvKpK */
+/* https://codepen.io/una/pen/zYdJvvw */
+/* https://codepen.io/una/pen/YzxwGxP */
+/* https://ishadeed.com/article/say-hello-to-css-container-queries/ */
+/* https://web.dev/ */
+/* https://github.com/AkshitVadodariya1201?tab=repositories */
+/* https://github.com/orgs/staytunedllp/repositories */
+
+/* add body to margin, padding 0 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*  create a root and declere variable for nav-bg-color, button-bg-color */
+:root {
+    --nav-bg-color: #041132;
+    --button-bg-color: #175fcc;
+    --text-color: #fff;
+}
+
+/* remove the bullet point for class name nav-links */
+.nav-links {
+    list-style: none;
+}
+
+/* remove the under line for the inside of class name nav-links  */
+.nav-links a {
+    text-decoration: none;
+    /* color  */
+    color: var(--text-color);
+}
+
+/* create a class name nav-bar to flex, gap 2rem, space-between */
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    background-color: var(--nav-bg-color);
+    /* container-name navbar and container-type inline-size */
+    container-name: navbar;
+    container-type: inline-size;
+}
+
+/* create class name nav-links to flex, gap 2rem, 1.2rem font size */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    /* align center */
+    align-items: center;
+}
+
+/* class name btn none */
+.btn {
+    display: none;
+}
+
+/* create a button for class name subscribe-btn */
+.subscribe-btn {
+    background-color: var(--button-bg-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* create a @container for container-name navbar max-width 800px */
+@container navbar (max-width: 800px) {
+    .list-items {
+        display: none;
+    }
+    .btn {
+        display: block;
+    }
+}
+
+/* create container for container name navbar max-width 600px*/
+@container navbar (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    .subscribe-btn {
+        margin-top: 1rem;
+    }
+}

@@ -1,0 +1,42 @@
+:root {
+    --theme: dark;
+    --color: white;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@container style(--theme:light) and style(--color: black) {
+    .card {
+        background-color: white;
+    }
+    .card1:nth-child(1) {
+        color: black;
+        background-color: blue;
+    }
+    .card1:nth-child(2) {
+        color: black;
+        background-color: red;
+    }
+}
+@container style(--theme:dark) and style(--color: white) {
+    .card {
+        background-color: black;
+    }
+    .card1:nth-child(1) {
+        color: white;
+        background-color: pink;
+    }
+    .card1:nth-child(2) {
+        color: white;
+        background-color: salmon;
+    }
+}

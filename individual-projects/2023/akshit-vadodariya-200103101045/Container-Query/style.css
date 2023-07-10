@@ -1,0 +1,84 @@
+:root{
+    --newsletter-bg-color: #f7f7f7;
+    --input-border-color: #d6f1f4;
+    --btn-bg-color: #01aabc;
+    --btn-txt-color: #ffffff;
+}
+.container {
+    container: newsletter / inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 1em auto;
+    width: 80%;
+}
+
+.news-letter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-between;
+    place-items: center;
+    padding: 1.2rem;
+    background-color: var(--newsletter-bg-color) ;
+}
+
+.news > * {
+    margin: 0;
+}
+
+.header {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.no-spam {
+    display: block;
+}
+
+.email{
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input-email {
+    height: 3em;
+    border-radius: 50px;
+    min-width: 5em;
+    width: 100%;
+    border: 2px solid var(--input-border-color);
+}
+
+::placeholder {
+    font-size: 17px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--btn-bg-color) ;
+    border-radius: 50px;
+    padding: 1em 2em;
+    color: var(--btn-txt-color);
+    border-color: transparent;
+    min-width: 8em;
+}
+
+@container newsletter (max-width: 400px) {
+    .header{
+        font-size: 1.2em;
+    }
+    .no-spam {
+        display: none;
+    }
+    .input-div{
+        width: 100%;
+    }
+    .input-email{
+        width: 100%;
+    }
+    .btn{
+        padding: 0.5em 0em;
+        width: 100%;
+    }
+}

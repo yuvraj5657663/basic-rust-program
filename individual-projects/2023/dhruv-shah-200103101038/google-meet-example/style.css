@@ -1,0 +1,221 @@
+:root {
+    --bg-color:#004d40;
+    --background:#3c4043;
+    --color:#fff;
+  }
+  .top-container {
+    container: main / inline-size;
+  }
+  .main-container {
+    display: flex;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .items {
+    background-color:var(--background);
+    height: 11em;
+    width: 24em;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: var(--color);
+  }
+  .circle {
+    background-color: var(--bg-color);
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+  }
+  .pic {
+    align-self: flex-start;
+    height: 2rem;
+    width: 2rem;
+  }
+  .side-page {
+    width: 43rem;
+    height: 31rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    display: none;
+  }
+  /* page 1  */
+  .info-text {
+    color: #285bad;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.5em;
+  }
+  .info-text:hover {
+    background-color: #f6fafe;
+    width: fit-content;
+    padding: 0.5em;
+  }
+  .info-link {
+    text-decoration: none;
+    padding: 0.7rem;
+    color: #0000ff;
+  }
+  .info-border {
+    border-top: 1px solid black;
+    margin: 1.2rem;
+  }
+  body:has(.info:checked) .side-page {
+    display: block;
+    .people-page,
+    .message-page,
+    .activiti-page {
+      display: none;
+    }
+  }
+  /* page 1 end  */
+  /* page 2  */
+  .people-img {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1em auto;
+    font-weight: 600;
+  }
+  .people-search {
+    height: 3em;
+    width: 100%;
+    border-radius: 1em;
+  }
+  .people-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em auto;
+  }
+  .people-icon {
+    background-color:var(--bg-color);
+    color: var(--color);
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body:has(.people:checked) .side-page {
+    display: block;
+    .info-page,
+    .message-page,
+    .activiti-page {
+      display: none;
+    }
+  }
+  /* second end  */
+  /* 3 page  */
+  .message-page p {
+    background-color: #f1f3f4;
+    border-radius: 6px;
+    padding: 1em;
+  }
+  .message-text {
+    margin-top: 8rem;
+    border-radius: 1.2rem;
+  }
+  body:has(.message:checked) .side-page {
+    display: block;
+    .info-page,
+    .people-page,
+    .activiti-page {
+      display: none;
+    }
+  }
+  /* 3 page end  */
+  /* 4 page  */
+  .activiti-type {
+    display: flex;
+    margin: 2rem auto;
+    gap: 1em;
+  }
+  .activity-txt > * {
+    margin: 0;
+  }
+  body:has(.activiti:checked) .side-page {
+    display: block;
+    .info-page,
+    .people-page,
+    .message-page {
+      display: none;
+    }
+  }
+  /* 4 page end  */
+  
+  .bottom-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 96%;
+    text-align: center;
+  }
+  .bottom-icon-center {
+    display: flex;
+    gap: 1rem;
+  }
+  .fa-solid {
+    background-color: var(--background);
+    color: var(--color);
+    font-size: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .icon1 {
+    background-color: #ea4335;
+  }
+  
+  .right-icon {
+    display: flex;
+    gap: 1em;
+  }
+  
+  .right-icon-first {
+    display: none;
+    margin-right: 48px;
+  }
+  
+  @container main (max-width: 900px) {
+    .container {
+      flex-wrap: wrap;
+    }
+    .end-btn {
+      display: none;
+    }
+    .right-icon-first {
+      display: block;
+    }
+    .side-page {
+      width: 80rem;
+    }
+  }
+  
+  @container main (max-width: 650px) {
+    .bottom-text {
+      display: none;
+    }
+    .side-page {
+      width: 100rem;
+    }
+  }
+  
+  @container main (max-width: 500px) {
+    .container {
+      display: none;
+    }
+    .side-page {
+      width: 80%;
+    }
+  }
+  

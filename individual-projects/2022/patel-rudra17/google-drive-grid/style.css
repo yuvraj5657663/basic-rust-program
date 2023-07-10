@@ -1,0 +1,81 @@
+:root {
+    --circle-color: #fda769;
+    --circle-height: 80px;
+    --circle-width: 80px;
+    --circle-path: circle(50%);
+    --circle-index: -1;
+}
+.stratergy {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+    align-items: center;
+}
+.image {
+    display: grid;
+    grid-template-columns: 20px 190px 90px 50px 100px 50px 40px;
+    grid-template-rows: 20px 230px 100px 30px 20px 40px;
+    place-content: center;
+}
+.image img {
+    grid-column: 2 / 7;
+    grid-row: 2 / 6;
+}
+.tools-info {
+    max-width: 60%;
+    place-self: center;
+}
+.round {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: var(--circle-index);
+    height: 64px;
+    width: 64px;
+    background-color: #ffb100;
+    clip-path: var(--circle-path);
+}
+.round1 {
+    grid-column: 5 / 7;
+    grid-row: 3 / 5;
+    z-index: var(--circle-index);
+    height: 192px;
+    width: 192px;
+    background-color: #fec868;
+    clip-path: var(--circle-path);
+}
+.round2 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+    z-index: var(--circle-index);
+    height: var(--circle-height);
+    width: var(--circle-width);
+    background-color: var(--circle-color);
+    clip-path: var(--circle-path);
+}
+.round3 {
+    grid-column: 6 / 7;
+    grid-row: 1 / 2;
+    z-index: var(--circle-index);
+    height: var(--circle-height);
+    width: var(--circle-width);
+    background-color: var(--circle-color);
+    clip-path: var(--circle-path);
+}
+.round4 {
+    grid-column: 4 / 6;
+    grid-row: 4 / 6;
+    z-index: var(--circle-index);
+    height: var(--circle-height);
+    width: var(--circle-width);
+    background-color: var(--circle-color);
+    clip-path: var(--circle-path);
+}
+.round5 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    z-index: var(--circle-index);
+    height: var(--circle-height);
+    width: var(--circle-width);
+    background-color: var(--circle-color);
+    clip-path: var(--circle-path);
+}

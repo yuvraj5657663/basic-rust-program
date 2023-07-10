@@ -1,0 +1,52 @@
+.main {
+    background-color: white;
+    padding: 16px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.475);
+}
+.page {
+    max-width: 1000px;
+    margin: 2rem auto 0;
+    overflow: hidden;
+    resize: horizontal;
+    padding: 12px;
+    container-name: blockquote;
+    container-type: inline-size;
+}
+.pra {
+    max-width: 70ch;
+}
+i {
+    color: lightgray;
+    font-size: 50px;
+}
+.name {
+    font-size: 15px;
+    line-height: 0px;
+    text-align: left;
+}
+.name2 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+img {
+    height: 50px;
+    border-radius: 100%;
+}
+@container blockquote (inline-size > 600px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: linear-gradient(135deg, violet 0%, blueviolet 100%);
+        border-radius: 15px;
+        box-shadow: none;
+        color: white;
+    }
+    i {
+        color: rgba(255, 255, 255, 0.501);
+    }
+}

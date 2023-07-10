@@ -1,0 +1,38 @@
+.main {
+    resize: horizontal;
+    container-name: table;
+    container-type: inline-size;
+    width: 800px;
+    overflow: auto;
+    margin: 2rem auto;
+}
+.table {
+    width: 100%;
+}
+th {
+    text-align: start;
+    padding: 15px;
+    color: gray;
+    background-color: lightgray;
+}
+td {
+    padding: 15px;
+    border-bottom: solid 1px lightgray;
+}
+.ammount {
+    color: red;
+}
+.time {
+    color: gray;
+    font-size: 14px;
+}
+@container table (inline-size < 400px) {
+    .table .date {
+        display: none;
+    }
+}
+@container table (inline-size < 600px) {
+    .table .description {
+        display: none;
+    }
+}

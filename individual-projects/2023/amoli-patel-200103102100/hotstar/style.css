@@ -1,0 +1,54 @@
+/* flex prperty and gap between elements */
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/* change color white and font style and remove underline */
+a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+/* background to header */
+header {
+    background-color: #000;
+    overflow-x: hidden;
+}
+/* remove bullets from li and create gap from li */
+li {
+    list-style: none;
+    margin: 0 10px;
+}
+/* remove space from left right and top surrounding header */
+body {
+    margin: 0;
+}
+/* decorate link in class kids with orange color bigger in size and weight and cursive fonts */
+.kids a {
+    color: orange;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+}
+/* change input style with transparent background also increase font weight */
+input {
+    background-color: transparent;
+    font-weight: 600;
+    border: none;
+}
+/* class fas to gray */
+.fas {
+    color: gray;
+}
+/* underline to class search */
+.search {
+    text-decoration: underline;
+}
+/* container query to class nav to hide at 1000px */
+@media (max-width: 1000px) {
+    .nav li {
+        display: none;
+    }
+}

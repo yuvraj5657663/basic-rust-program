@@ -1,4 +1,4 @@
-# Learning at Staytuned
+# Training at Staytuned
 
 Staytuned community is a place where you can learn and share your knowledge with others. We are a community of developers, designers, and students who are passionate about learning and sharing knowledge.
 Learning at StaytunedLLP organisation contains all the source code for the learning practice and projects done by interns.
@@ -13,7 +13,7 @@ Learning at StaytunedLLP organisation contains all the source code for the learn
 4. Assign issue to yourself. Update title of the issue `Your name - On boarding`. Add Today's date as start date and end date of `My training` project.
 5. Complete all tasks of created issue and close after completion.
 
-## Steps to start learning
+## Steps to start training
 
    At our company, we prioritize the growth and development of our interns by providing them with a structured self-learning process. To facilitate this, we have implemented an internal workflow designed to guide interns through their learning journey. We have created comprehensive documentation tailored to each role, which can be found in our [training](https://github.com/StaytunedLLP/training) repository's [discussions](https://github.com/StaytunedLLP/training/discussions). This documentation serves as a roadmap for interns, outlining the necessary skills and knowledge they need to acquire.
 

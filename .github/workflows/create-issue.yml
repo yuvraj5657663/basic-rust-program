@@ -1,4 +1,4 @@
-name: Create Issue
+name: Create Issue Test
 on:
   workflow_call:
     # Start coding workflow to create branch, pr and link to the issue
@@ -51,3 +51,4 @@ jobs:
            -e REG_PASSWORD='${{secrets.GITHUB_TOKEN}}' \
            --rm ghcr.io/staytunedllp/dagger-in-docker:latest \
            "dagger run ./scripts/build-github-app.sh"
+

@@ -1,4 +1,4 @@
-name: Create Issue Test
+name: Create Issue
 on:
   workflow_call:
     # Start coding workflow to create branch, pr and link to the issue
@@ -35,7 +35,7 @@ jobs:
           APP_ID: ${{ secrets.DISPATCH_BOT_APP_ID }}
           PRIVATE_KEY: ${{ secrets.DISPATCH_BOT_PPK }}
           INSTALLATION_ID: ${{ secrets.DISPATCH_BOT_INSTALLATION_ID }}
-          EVENT_TYPE: create-issue-test
+          EVENT_TYPE: create-issue
           CLIENT_PAYLOAD: '{"title": "Learn: ${{env.discussion_title}}","owner": "${{env.github_owner}}", "repo": "training", "number": "${{env.discussion_number}}", "assignee": "${{env.issue_assignee}}", "commentId": "${{env.comment_id}}" , "commentRepo": "${{env.comment_repo}}"}'
         run: |
           chmod +x ./scripts/build-github-app.sh
@@ -51,4 +51,3 @@ jobs:
            -e REG_PASSWORD='${{secrets.GITHUB_TOKEN}}' \
            --rm ghcr.io/staytunedllp/dagger-in-docker:latest \
            "dagger run ./scripts/build-github-app.sh"
-

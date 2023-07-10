@@ -1,0 +1,60 @@
+.container {
+  container-type: inline-size;
+  container-name: card;
+  margin: 0 auto;
+  resize: horizontal;
+  overflow: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(35deg, lightblue 25%, purple, hotpink, gold);
+  color: azure;
+}
+.card:hover{
+  background: linear-gradient(-25deg, pink 25%, peachpuff, paleturquoise, plum);
+}
+.quote {
+  font-size: 4rem;
+  opacity: 0.7;
+}
+.blockquote {
+  padding: 4em 7em;
+}
+.author-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+img {
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 50%;
+}
+pre{
+  font-family: sans-serif;
+}
+@container card (min-width: 43.75em) {
+  .blockquote {
+    text-align: center;
+  }
+}
+@container card (max-width: 43.75em) {
+  .card {
+    background: white;
+    border: 2px solid black;
+    align-items: flex-start;
+    color: black;
+  }
+  .blockquote {
+    padding: 1.5rem 2rem;
+  }
+  .quote{
+    padding-left: 1rem;
+  }
+  .author-info{
+    padding-left: 1rem;
+  }
+}

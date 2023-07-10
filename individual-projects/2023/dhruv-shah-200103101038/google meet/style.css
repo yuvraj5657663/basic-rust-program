@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.items{
+    background-color: #3c4043;
+    height: 190px;
+    width: 480px;
+    border-radius: 5px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+}
+.circle{
+    background-color: #5cd56b;
+    font-size: 3rem;
+    padding: 2rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+.pic{
+    align-self: flex-start;
+    height: 2rem;
+    width: 2rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.fa-solid{
+    background-color: #fff;
+    font-size: 25px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+.footer_icon , .footer_right_icon {
+    display: flex;
+    gap: 1em;
+}
+

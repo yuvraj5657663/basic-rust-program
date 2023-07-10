@@ -1,0 +1,49 @@
+.page {
+    container-type: inline-size;
+    container-name: newsletter;
+    resize: horizontal;
+    overflow: auto;
+    margin: 2rem auto;
+    width: 200px;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(240, 240, 240);
+}
+.info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    border: 2px solid #60a3bc;
+}
+button {
+    background-color: #60a3bc;
+    border-radius: 50px;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+}
+@container newsletter (max-width: 400px) {
+    p {
+        display: none;
+    }
+    .info {
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

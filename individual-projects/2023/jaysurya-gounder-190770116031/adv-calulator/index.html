@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adv-Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <input type="text" id="input" />
+        <br /><br />
+        <button onclick="buttonPressed('7')">7</button>
+        <button onclick="buttonPressed('8')">8</button>
+        <button onclick="buttonPressed('9')">9</button>
+        <button onclick="buttonPressed('+')">+</button>
+        <button onclick="buttonPressed('-')">-</button>
+        <br />
+        <button onclick="buttonPressed('4')">4</button>
+        <button onclick="buttonPressed('5')">5</button>
+        <button onclick="buttonPressed('6')">6</button>
+        <button onclick="buttonPressed('*')">*</button>
+        <button onclick="buttonPressed('/')">/</button>
+        <br />
+        <button onclick="buttonPressed('1')">1</button>
+        <button onclick="buttonPressed('2')">2</button>
+        <button onclick="buttonPressed('3')">3</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearInput()">C</button>
+        <br />
+        <button onclick="buttonPressed('(')">(</button>
+        <button onclick="buttonPressed('0')">0</button>
+        <button onclick="buttonPressed(')')">)</button>
+        <button onclick="buttonPressed('.')">.</button>
+        <br />
+        <button onclick="buttonSqrt()">√</button>
+        <button onclick="buttonFactorial()">!</button>
+        <button onclick="buttonPressed('**')">x<sup>y</sup></button>
+        <button onclick="buttonPercentage()">%</button>
+    </body>
+    <script src="script.js"></script>
+</html>

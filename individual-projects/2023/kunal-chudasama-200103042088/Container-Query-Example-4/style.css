@@ -1,0 +1,67 @@
+:root{
+    --bg-color-text:lightblue;
+    --bg-color-2:lightgrey;
+    --color-text:black;
+    --triangle-color:#fff;
+}
+.download {
+    max-width: 56.25rem;
+    margin: 2rem auto 0;
+    overflow: hidden;
+    resize: horizontal;
+    padding: 1rem;
+}
+
+.download-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color:var(--bg-color-text);
+    text-decoration: none;
+    color:var(--color-text);
+}
+
+.layout-items {
+    container:downloads / inline-size;
+}
+
+@container downloads (min-width:220px) {
+    .text {
+        background-color:var(--bg-color-2);
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+
+@container downloads (max-width:219px) {
+    .text {
+        position: relative;
+        aspect-ratio: 1/1;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 0;
+    }
+
+    .text i {
+        order: -1;
+    }
+
+    .text::after {
+        position: absolute;
+        content: "";
+        border: 10px solid;
+        top: 0;
+        right: 0;
+        border-top-color:var(--triangle-color);
+        border-right-color:var(--triangle-color);
+    }
+}

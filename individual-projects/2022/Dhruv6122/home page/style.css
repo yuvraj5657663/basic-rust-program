@@ -1,0 +1,246 @@
+#header{
+    display: flex;
+    border: 2px solid black;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.accessibility{
+    padding: 10px;
+}
+.contact{
+    padding: 10px;
+}
+.find{
+    margin-left: 1100px;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+.online-area{
+    display: flex; 
+    justify-content: space-between; 
+}
+.logo{
+    padding-left: 20px;
+}
+.online-advice{
+    margin-left: 400px;
+    background-color:grey;
+    color: #fff;
+}
+.donate, .online-shop{
+    background-color: grey;
+    color: #fff;
+}
+.online-advice, .donate, .online-shop{
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.navigation{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+.underline{
+    border: 1px solid black;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.paragraph{
+    border: 1px solid black;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.community{
+    border: 1px solid black;
+    background-color: aquamarine;
+    padding: 20px;
+}
+section {
+    display: block;
+}
+h2.underline {
+    padding-bottom: 0.42857em;
+    margin-bottom: 0.42857em;
+    position: relative;
+}
+.btn.purple {
+    background-color: #340458;
+    color: #fff;
+}
+.btn {
+    border: 0;
+    border-radius: 3em;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0.58334em 1.11111em;
+}
+.text{
+        text-align: center;
+        border: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+.promotedItems{
+        display: flex;
+        margin-left: 50px;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+h2.underline{
+        padding-bottom: 0.42857em;
+    margin-bottom: 0.42857em;
+    position: relative;
+}
+p {
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.66667em;
+}
+    .btn.turquoise {
+    background-color: #340458;
+    color: #fff;
+}
+.icon{
+            display: flex;
+            justify-content: space-between;
+}
+.promoteditems{
+        display: flex;
+        margin-left: 50px;
+        justify-content: space-between;
+        padding: 0 60px;
+}
+.shop{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+}
+.line1{
+        border: 1px solid black;
+        border-radius: 50px;
+        padding-left: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+.event{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+.search{
+    padding-left: 300px;
+}
+.news{
+    padding: 15px;
+}
+.news{
+    display: flex;
+    justify-content: space-between;
+}
+.connected{
+    display: flex;
+}
+#info{
+    margin-left: 600px;
+}
+.logo{
+        display: flex;
+        justify-content: space-between;
+    }
+footer{
+    background-color: grey;
+}
+.in-touch{
+    display: flex;
+    justify-content: space-between;
+}
+.scope{
+    display: flex;
+    list-style-type: none;
+    font-size: larger;
+    padding-bottom: 50px;
+}
+.scope div li a{
+    color: white;
+}
+.list2{
+    padding-left: 30px;
+}
+.list1{
+    padding-left: 30px;
+}
+.email-id{
+    padding-right: 100px;
+}
+.email{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+.form{
+    display: flex;
+}
+.form p{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: larger;
+    padding: 10px 20px;
+}
+#sign-up{
+    margin-left: 150px;
+    border-radius: 50px;
+    font-size: larger;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+

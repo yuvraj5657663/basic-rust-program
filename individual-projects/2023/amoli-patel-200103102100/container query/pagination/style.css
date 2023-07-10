@@ -1,0 +1,50 @@
+.page{
+    container-name: paginaton;
+    container-type: inline-size;
+    width: 700px;
+    margin: 2rem auto;
+    overflow: auto;
+    resize: horizontal;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid;
+    padding: 20px 0px;
+}
+.box1, .box2, .box3, .box4, .box5, .box6{
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+.previous, .next{
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    color: transparent;
+}
+@container paginaton (max-width: 550px){
+    .previous, .next{
+        background: lightgray;
+        color: black;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6{
+        background-color: transparent;
+        color: transparent;
+    }
+}
+@container paginaton (max-width: 350px){
+    .main{
+        flex-direction: column;
+    }
+    .box1, .box2, .box3, .box4, .box5, .box6{
+        display: none;
+    }
+    .previous, .next{
+        height: 50px;
+        width:100%;
+    }
+}

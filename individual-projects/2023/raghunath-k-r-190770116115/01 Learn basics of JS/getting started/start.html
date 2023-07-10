@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>simple Switch program</title>
+    </head>
+    <body>
+        <button onclick="simpleSwitch();" >
+            switch program
+        </button>
+        <script>
+            function simpleSwitch(){
+              let name = 'Raghunath';
+              switch(name) {
+                case 'surya':
+                     console.log("no this not my name");
+                     break;
+                case 'deep':
+                    console.log("This is also not my name");
+                    break;
+                case 'Raghunath': 
+                    console.log("yes This is my name"); 
+                    break;
+                default:
+                    console.log("This is not even a name");
+                    break;         
+              }
+            }
+        </script>
+    <body>
+        <button onclick="forinsample();">for in sample</button>
+        <script>
+            'use strict';
+
+            function forinsample() {
+                let about = {
+                   "tention" : "GTU",
+                   "college" : "silver OAk college of engineering and tecnology",
+                    "Name" : "K R Raghunath",
+                    "examfees" : 15500,
+                    "collegefees" : 39000,
+                    calculatetotalexpence: function(){
+                        return this.examfees + this.collegefees;
+                    }
+                }; 
+               for(const key in about){
+                console.log("'" + key + "'=" +about[key]);
+               }
+            }
+        </script>
+    </body>
+
+    <body>
+        <button onclick="forofsample();">for of sample</button>
+        <button onclick="breaksample();">Break sample </button>
+        <script>
+            'use strict';
+
+                let _abouts = [
+                  { "tention" : "GTU",
+                   "college" : "silver OAk college of engineering and tecnology",
+                    "Name" : "K R Raghunath",
+                    "examfees" : 15500,
+                    "collegefees" : 39000
+                  },
+                  {
+                    "tention" : "GTU",
+                   "college" : "silver OAk college of engineering and tecnology",
+                    "Name" : "jaysurya",
+                    "collegefees" : 31000  
+                  }  ,
+                  {
+                    "tention" : "GTU",
+                   "college" : "silver OAk college of engineering and tecnology",
+                    "Name" : "Divya",
+                    "examfees" : 15500,
+                    "collegefees" : 9000
+                  }
+                  ];
+                 function forofsample(){
+                 for(const item of _abouts)
+                 {
+                    // if(item.collegefees>20000){
+                    //     break;
+                    // }
+                 console.log(JSON.stringify(item));
+                 }
+                 }
+                 function breaksample(){
+                 for(const item of _abouts)
+                 {
+                    if(item.collegefees<15000){
+                        continue;            //also can use break 
+                    }
+                 console.log(JSON.stringify(item));
+                 }
+                 }
+        </script>
+
+             <button onclick="loopstringsample();">looping over a string</button>
+                  <script>
+                       'use strict';
+
+                    function loopstringsample(){
+                    let address = "D-403, Rishit residency, lambha turning,narol";
+                    let letters = "";
+                       for(const char of address){
+                          letters+=char;
+                          }
+                        console.log(letters);
+                    }
+ </script>
+        
+    </body>
+</html>

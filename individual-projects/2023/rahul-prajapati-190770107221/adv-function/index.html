@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        //----------------------------- Function Binding ---------------------------------
+
+
+
+             //Fix a function that loses "this"
+
+                // function askPassword(ok, fail) {
+                // let password = prompt("Password?", '');
+                // if (password == "rockstar") ok();
+                // else fail();
+                // }
+
+                // let user = {
+                // name: 'John',
+
+                // loginOk() {
+                // alert(`${this.name} logged in`);
+                // },
+
+                // loginFail() {
+                // alert(`${this.name} failed to log in`);
+                // },
+
+                // };
+
+                // askPassword(user.loginOk.bind(user), user.loginFail.bind(user));
+
+
+               
+         //Partial application for login
+
+                //    function askPassword(ok, fail) {
+                //         let password = prompt("Password?", '');
+                //         if (password == "rockstar") ok();
+                //         else fail();
+                //         }
+
+                //         let user = {
+                //         name: 'John',
+
+                //         login(result) {
+                //         alert( this.name + (result ? ' logged in' : ' failed to log in') );
+                //         }
+                //         };
+
+                //         askPassword(() => user.login(true), () => user.login(false));
+    </script>
+</body>
+</html>

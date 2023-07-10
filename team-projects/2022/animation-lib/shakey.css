@@ -1,0 +1,18 @@
+.shakey {
+    animation: shakey var(--duration) var(--count);
+}
+
+@keyframes shakey {
+    0% {
+        transform: translatey(1px);
+    }
+    25% {
+        transform: translatey(20px);
+    }
+    50% {
+        transform: translatey(1px);
+    }
+    75% {
+        transform: translatey(20px);
+    }
+}

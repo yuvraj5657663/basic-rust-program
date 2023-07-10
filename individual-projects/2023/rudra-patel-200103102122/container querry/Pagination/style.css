@@ -1,0 +1,65 @@
+:root{
+    --back-color: gray;
+}
+.container {
+    container-type: inline-size;
+    container-name: boxes;
+    resize: horizontal;
+    overflow: auto;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.boxes {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: wheat;
+    border-radius: 5px;
+}
+.box:nth-child(1){
+    background-color: var(--back-color);
+}
+:is(.box, .change):is(:hover, :focus){
+    background-color: var(--back-color);
+    cursor: pointer;
+    color: aliceblue;
+}
+.change {
+    height: 50px;
+    width: 120px;
+    background-color: var(--back-color);
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    display: none;
+}
+@container boxes (max-width: 500px) {
+    .box {
+        display: none;
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+    }
+    .change {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@container boxes (max-width: 300px) {
+    .change {
+        width: 100%;
+    }
+    .boxes {
+        flex-direction: column;
+    }
+}

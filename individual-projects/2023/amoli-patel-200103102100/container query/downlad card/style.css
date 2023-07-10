@@ -1,0 +1,117 @@
+.box1 {
+    overflow: hidden;
+    resize: horizontal;
+    container-name: download1;
+    container-type: inline-size;
+    width: 800px;
+    margin: 1em auto;
+}
+.gray {
+    display: flex;
+    background-color: lightgray;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.gray p {
+    padding-left: 15px;
+}
+.gray i {
+    padding-right: 10px;
+}
+@container download1 (max-width: 300px) {
+    .gray {
+        position: relative;
+        aspect-ratio: 1/1;
+        max-height: 200px;
+        background-color: lightblue;
+        border-radius: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gray ::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        background: linear-gradient(45deg, black 50%, white 50%);
+    }
+}
+.box2 {
+    overflow: hidden;
+    resize: horizontal;
+    container-name: download2;
+    container-type: inline-size;
+    max-width: 800px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-gap: 1rem;
+}
+.blue {
+    position: relative;
+    aspect-ratio: 1/1;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.blue ::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    background: linear-gradient(45deg, black 50%, white 50%);
+}
+@container download2 (max-width: 300px) {
+    .blue {
+        display: flex;
+        background-color: lightgray;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: space-between;
+        width: 200px;
+        height: 50px;
+        flex-direction: row;
+    }
+    .blue ::after {
+        display: none;
+    }
+    .blue p {
+        padding-left: 15px;
+    }
+    .blue i {
+        padding-right: 10px;
+    }
+    .main {
+        flex-direction: column;
+    }
+}
+@container download2 (max-width: 200px) {
+    .blue {
+        position: relative;
+        aspect-ratio: 1/1;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 170px;
+        border-radius: 0;
+    }
+    .blue::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 30px;
+        width: 30px;
+        background: linear-gradient(45deg, black 50%, white 50%);
+    }
+}

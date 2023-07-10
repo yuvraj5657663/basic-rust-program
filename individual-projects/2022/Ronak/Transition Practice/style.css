@@ -1,0 +1,94 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+div.main {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+div.main .text {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    font-size: 35px;
+    top: 50%;
+}
+div.main .topleft {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    background-color: red;
+}
+div.main .topright {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 100px;
+    background-color: yellow;
+}
+div.main .bottomleft {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 0px;
+    background-color: blue;
+}
+div.main .bottomright {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+    background-color: green;
+}
+div.main:hover .topleft {
+    transition: transform 1s;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+div.main:hover .topright {
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    transform-origin: 100% 0;
+}
+div.main:hover .bottomleft {
+    transition: transform 1s;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+}
+div.main:hover .bottomright {
+    transition: transform 1s;
+    transform: rotate(90deg);
+    transform-origin: 100% 100%;
+}
+div.main:not(:hover) .topleft {
+    transition: transform 1s;
+    transform: rotate(90);
+    transform-origin: top left;
+}
+div.main:not(:hover) .topright {
+    transition: transform 1s;
+    transform: rotate(90);
+    transform-origin: top right;
+}
+div.main:not(:hover) .bottomleft {
+    transition: transform 1s;
+    transform: rotate(90);
+    transform-origin: bottom left;
+}
+div.main:not(:hover) .bottomright {
+    transition: transform 1s;
+    transform: rotate(90);
+    transform-origin: bottom right;
+}

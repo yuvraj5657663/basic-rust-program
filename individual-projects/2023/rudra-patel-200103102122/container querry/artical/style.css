@@ -1,0 +1,57 @@
+.container {
+    container-type: inline-size;
+    container-name: card;
+    overflow: auto;
+    resize: horizontal;
+    margin: 0 auto;
+    
+}
+.card {
+    background-color: palegreen;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@container card (max-width: 43.75em) {
+    .container {
+        background-color: aquamarine;
+        height: auto;
+    }
+    .info{
+        width: 60%;
+    }
+    .box {
+        width: 8em;
+        height: 8em;
+        background-color: green;
+        border-radius: 5px;
+    }
+    .card {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        gap: 10px;
+    }  
+}
+@container card (max-width: 25em) {
+    .box {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        background-color: green;
+        align-self: flex-start;
+    }
+    .info{
+        width: 100%;
+    }
+    .card {
+        display: flex;
+        background-color: white;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.7rem;
+        height: 50%;
+    }  
+}

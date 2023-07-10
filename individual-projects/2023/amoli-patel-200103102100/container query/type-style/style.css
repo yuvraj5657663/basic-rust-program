@@ -1,0 +1,73 @@
+:root {
+    --theme: light;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.card1,
+.card2 {
+    border-radius: 10px;
+    padding: 1rem;
+    width: 600px;
+}
+@container style(--theme: light) {
+    .card1 {
+        background-color: #9cd3e5;
+    }
+    .card2 {
+        background-color: #adacac;
+    }
+}
+@container style(--theme: dark) {
+    .card1 {
+        background-color: lightblue;
+    }
+    .card2 {
+        background-color: lightgray;
+    }
+}
+body:has(.switch:checked) {
+    background: black;
+    color: white;
+}
+input[type='checkbox'] {
+    visibility: hidden;
+}
+label {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  label::after {
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: absolute;
+    border-radius: 100%;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+  }
+  input:checked + label {
+    background: white;
+   
+  }
+  input:checked + label::after {
+    content: '';
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: absolute;
+    border-radius: 100%;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+    transform: translateX(62px);
+    
+  }

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Keyboard</title>
+    <style>
+        body{
+            height: 100vh;
+        }
+        .keyboard {
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(32, 32px);
+            grid-template-rows: repeat(12, 30px);
+            background: rgb(250, 249, 249);
+            padding: 100px;
+            gap: 10px;
+        }
+
+
+
+        .key {
+            display: grid;
+            place-items: center;
+            grid-column: span 2;
+            grid-row: span 2;
+            border-radius: 5px;
+            color: black;
+            box-shadow: 0 0 10px #ca5555, 0 0 40px #0c0c0c, 0 0 80px #0d0d0d
+        }
+
+        .key:hover {
+            border: 2px solid rgb(244, 8, 8);
+        }
+
+        .tab {
+            grid-column: span 4;
+        }
+
+        .backspace {
+            grid-column: span 5;
+        }
+
+        .dash {
+            grid-column: span 3;
+        }
+
+        .slash {
+            grid-column: span 4;
+        }
+
+        .space {
+            grid-column: span 14;
+        }
+
+        .capslock {
+            grid-column: span 5;
+            
+        }
+
+        .shift1 {
+            grid-column: span 6;
+
+        }
+
+        .shift2 {
+            grid-column: span 6;
+
+        }
+
+        .enter {
+            grid-column: span 5;
+        }
+
+        .arrow1 {
+            grid-row: 11/12;
+            grid-column: 29/31;
+        }
+
+        .arrow3 {
+            grid-row: 12/13;
+            grid-column: 29/31;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="keyboard">
+        <div class="key">esc</div>
+        <div class="key">f1</div>
+        <div class="key">f2</div>
+        <div class="key">f3</div>
+        <div class="key">f4</div>
+        <div class="key">f5</div>
+        <div class="key">f6</div>
+        <div class="key">f7</div>
+        <div class="key">f8</div>
+        <div class="key">f9</div>
+        <div class="key">f10</div>
+        <div class="key">f11</div>
+        <div class="key">f12</div>
+        <div class="key">prt sc</div>
+        <div class="key">(.)</div>
+        <div class="key">delete</div>
+
+        <div class="key dash">~</div>
+        <div class="key">1</div>
+        <div class="key">2</div>
+        <div class="key">3</div>
+        <div class="key">4</div>
+        <div class="key">5</div>
+        <div class="key">6</div>
+        <div class="key">7</div>
+        <div class="key">8</div>
+        <div class="key">9</div>
+        <div class="key">0</div>
+        <div class="key">-</div>
+        <div class="key">=</div>
+        <div class="key backspace"> ← backspace</div>
+
+        <div class="key tab">tab</div>
+        <div class="key">Q</div>
+        <div class="key">W</div>
+        <div class="key">E</div>
+        <div class="key">R</div>
+        <div class="key">T</div>
+        <div class="key">Y</div>
+        <div class="key">U</div>
+        <div class="key">I</div>
+        <div class="key">O</div>
+        <div class="key">P</div>
+        <div class="key">[</div>
+        <div class="key">]</div>
+        <div class="key slash">\</div>
+
+        <div class="key capslock">caps lock</div>
+        <div class="key">A</div>
+        <div class="key">S</div>
+        <div class="key">D</div>
+        <div class="key">F</div>
+        <div class="key">G</div>
+        <div class="key">H</div>
+        <div class="key">J</div>
+        <div class="key">K</div>
+        <div class="key">L</div>
+        <div class="key">;</div>
+        <div class="key">'</div>
+        <div class="key enter">enter</div>
+
+        <div class="key shift1">shift ↑</div>
+        <div class="key">Z</div>
+        <div class="key">X</div>
+        <div class="key">C</div>
+        <div class="key">V</div>
+        <div class="key">B</div>
+        <div class="key">N</div>
+        <div class="key">M</div>
+        <div class="key">,</div>
+        <div class="key">.</div>
+        <div class="key">/</div>
+
+        <div class="key shift2">↑ shift</div>
+
+        <div class="key">ctrl</div>
+        <div class="key">fn</div>
+        <div class="key">?</div>
+        <div class="key">alt</div>
+        <div class="key space">space bar</div>
+        <div class="key">alt</div>
+        <div class="key">ctrl</div>
+        <div class="key arrow1">↑</div>
+        <div class="key arrow2">←</div>
+        <div class="key arrow3">↓</div>
+        <div class="key arrow4">→</div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

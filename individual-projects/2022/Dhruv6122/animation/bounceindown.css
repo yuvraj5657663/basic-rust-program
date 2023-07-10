@@ -1,0 +1,30 @@
+.animation {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    place-content: center;
+}
+.bounceindown {
+    animation: bounceinDown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounceinDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

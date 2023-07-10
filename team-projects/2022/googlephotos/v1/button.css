@@ -1,0 +1,28 @@
+.button {
+    padding: 1em;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: #185abc;
+}
+
+.border-btn {
+    border: 1px solid #dadce0;
+    padding: 1em;
+    border-radius: 4px;
+}
+.border-btn:hover {
+    background-color: #f4f8fe;
+    border-color: #1a73e8;
+}
+
+.no-bdr-btn {
+    padding: 1em;
+    border-radius: 4px;
+}
+.no-bdr-btn:hover {
+    background-color: #f4f8fe;
+}

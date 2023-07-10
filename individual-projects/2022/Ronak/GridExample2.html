@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grid Example 2</title>
+    <style>
+        body {
+            padding: 1rem;
+        }
+
+        div {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        span {
+            margin: 1rem 0;
+        }
+        div {
+            max-width: 10000px;
+        }
+
+        .deals {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80%;
+        }
+
+        .item {
+            display: flex;
+            flex-flow: column;
+            border: 2px solid black;
+            border-radius: 16px;
+            padding: 32px;
+        }
+
+        .item>p {
+            margin: 0.5rem 0rem 1rem;
+            font-size: medium;
+        }
+
+        .item>button {
+            margin-top: auto;
+            background: yellow;
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 16px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Grid Example 2</h1>
+    </center>
+    <div class="deals">
+        <span class="item">
+            <h1>Realme Watch 3(Black Edition)</h1>
+            <img src="Images/watch.png">
+            <i class="fa fa-rupee" style="font-size: 24px;"> 3499.</i>
+            <p>CLEARER YOU,BIGGER VIEW.</p>
+            <button>Buy Now</button>
+        </span>
+        <span class="item">
+            <h1>Realme Buds Air 3(Starry Blue)</h1>
+            <img src="Images/buds.jpg">
+            <i class="fa fa-rupee" style="font-size: 24px;"> 3999.</i>
+            <p>NOISE OFF, ROCK ON.</p>
+            <button>Buy Now</button>
+        </span>
+        <span class="item">
+            <h1>Realme Tech Backpack</h1>
+            <img src="Images/backpack.jpg">
+            <i class="fa fa-rupee" style="font-size: 24px;"> 2399.</i>
+            <p>SPACIOUS CAPACITY. STYLISH DESIGN. GEEKY ADD-ONS</p>
+            <button>Buy Now</button>
+        </span>
+        <span class="item">
+            <h1>Realme 100W Soundbar (Black)</h1>
+            <img src="Images/soundbar.jpg">
+            <i class="fa fa-rupee" style="font-size: 24px;"> 6999.</i>
+            <p>BRING THE CINEMA HOME.</p>
+            <button>Buy Now</button>
+        </span>
+        <span class="item">
+            <h1>Realme TechLife Air Purifier (White)</h1>
+            <img src="Images/purifier.png">
+            <i class="fa fa-rupee" style="font-size: 24px;">7999.</i>
+            <p>BREATHE BETTER, LIVE BETTER</p>
+            <button>Buy Now</button>
+        </span>
+    </div>
+</body>
+
+</html>

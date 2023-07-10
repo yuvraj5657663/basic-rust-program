@@ -1,0 +1,119 @@
+/* --------------- section 1 ------------ */
+/* :root{
+  --bg-them1: white;
+  --bg-them2: black;
+  --bg-card1: gray;
+  --bg-cardd1: lightblue;
+  --bg-card2: aqua;
+  --bg-cardd2: blue;
+} */
+/* body{
+  background-color: var(--bg-them2);
+}
+.info1{
+  background-color: var(--bg-cardd1);
+}
+.info2{
+  background-color: var(--bg-cardd2);
+} */
+
+
+/* ---------------section 2---------------- */
+/* .info {
+  color: rgb(255, 0, 0);
+  height: 100vh;
+}
+.info1 {
+  background-color: rgb(5, 5, 31);
+}
+.info2 {
+  background-color: rgb(4, 192, 255);
+}
+
+.info:has(.toogle-btn:checked) {
+  color: white;
+  background-color: rgb(0, 0, 0);
+
+  .info1 {
+    background-color: hotpink;
+  }
+  .info2 {
+    background-color: pink;
+  }
+} */
+
+
+
+/* ----------------- section 3 ---------------- */
+:root{
+  /* --theme: light; */
+  /* --font: dark; */
+}
+@container style(--theme: dark) and style(--font: light){
+  body{
+    background-color: gray;
+  }
+  .info{
+    color: black;
+  }
+  .info1{
+    background-color: blue;
+  }
+  .info2{
+    background-color: lightblue;
+  }
+}
+@container style(--theme: light) and style(--font: dark){
+  body{
+    background-color: white;
+  }
+  .info{
+    color: white;
+  }
+  .info1{
+    background-color: hotpink;
+  }
+  .info2{
+    background-color: pink;
+  }
+}
+body:has(.dark-mode:checked) {
+  background: black;
+  color: white;
+}
+input[type='checkbox'] {
+  visibility: hidden;
+}
+label {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background: black;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+label::after {
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  position: absolute;
+  border-radius: 100%;
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+}
+input:checked + label {
+  background: white;
+}
+input:checked + label::after {
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+  border-radius: 100%;
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+  transform: translateX(62px);
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example 5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80%;
+            background: #ccc;
+            line-height: 1.2;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        article {
+            padding: 20px;
+            border: 1px solid rgb(153, 153, 153);
+            border-radius: 5px;
+            background: #fff;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-gap: 16px;
+        }
+
+        article:nth-child(1) {
+            grid-row: 2/span 3;
+            grid-column: 2/span 2;
+        }
+        article:nth-child(2) {
+            grid-row: 1/span 2;
+            grid-column: 5/span 2;
+        }
+        article:nth-child(3) {
+            grid-row: 3/span 3;
+            grid-column: 4/span 2;
+        }
+        article:nth-child(4) {
+            grid-row: 4/span 3;
+            grid-column: 6/span 2;
+        }
+        article:nth-child(5) {
+            grid-row: 5/span 3;
+            grid-column: 1/span 2;
+        }
+        article:nth-child(6) {
+            grid-row: 6/span 3;
+            grid-column: 3/span 2;
+        }
+        article:nth-child(7) {
+            grid-row: 7/span 3;
+            grid-column: 6/span 2;
+        }
+        article:nth-child(8) {
+            grid-row: 8/span 3;
+            grid-column: 1/span 2;
+        }
+        article:nth-child(9) {
+            grid-row: 9/span 3;
+            grid-column: 4/span 2;
+        }
+        article:nth-child(10) {
+            grid-row: 11/span 3;
+            grid-column: 2/span 2;
+        }
+        article:nth-child(11) {
+            grid-row: 10/span 3;
+            grid-column: 6/span 2;
+        }
+        article:nth-child(12) {
+            grid-row: 12/span 3;
+            grid-column: 4/span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Paleo_food.jpg">
+            <h3>1) All of These Headlines Are Not Exactly The Same</h3>
+            <p>In the real world, you don't know how long the content will be. Writers will write what they need. Photos
+                will be cropped to the shape that they should be. That's good. Make a system that allows this. You want
+                it to be flexible and robust.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Indian_bengali_food.jpg">
+            <h3>2) Some Are Short</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Food_in_Miyajima.jpg">
+            <h3>3) Some Headlines Can Sometimes Be Quite Long, Because It Takes Time to Make A Point</h3>
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio.
+                Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi
+                diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante
+                placerat erat, non tristique elit urna et turpis.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P1-Food_with_love.jpg">
+            <h3>4) Also, Why Are We Using Fake Content? Let's Make Some Real-ish Content.</h3>
+            <p>By using real content, we can see the variation inherent in what this site might present. And we can
+                design for those real world needs.
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Beautiful_Chaldean_Food_for_Everyone.jpg">
+            <h3>5) Look At That</h3>
+            <p>Doesn't that look yummy?</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Birds_on_stick_Shanghai_Qibao.jpg">
+            <h3>6) See how this layout is broken?</h3>
+            <p>That's because floats are really crap at handling layout. We've been using a screwdriver as a hammer. It
+                sort of works, but badly.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Restaurant_food_Kunming_Yunnan.jpg">
+            <h3>7) The New CSS Will Fix Things</h3>
+            <p>Finally we get some real hammers.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Bunter_Teller.jpg">
+            <h3>8) Several Kinds of Hammers</h3>
+            <p>Grid, Flexbox, Alignment, Shapes.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P3-Egyptian_food_Koshary.jpg">
+            <h3>9) Size, Isn't That Magical!</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Mexican_food.jpg">
+            <h3>10) All of These Headlines</h3>
+            <p>Always three lines of text, which fits exactly in the available space. Describing where you will go when
+                you click.</p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/P2-Arepitas_Food_Macro.jpg">
+            <h3>11) Are Exactly the Same</h3>
+            <p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio.
+                Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi
+                diam iaculis velit, id fringilla sem nunc vel mi. </p>
+        </article>
+        <article>
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/Ravenna_food.jpg">
+            <h3>12) Size, Isn't That Magical!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris
+                tindunt.</p>
+        </article>
+
+    </main>
+</body>
+
+</html>

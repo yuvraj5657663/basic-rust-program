@@ -1,0 +1,122 @@
+.container{
+    container-type: inline-size;
+    container-name: card;
+    margin: 0 auto;
+    resize: horizontal;
+    overflow: auto;
+}
+.whole-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.time-manu{
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    width: 16em;
+    flex-direction: column;
+}
+
+.heading > * {
+    margin: 0;
+}
+
+.progressbar{
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    width: 100%;
+}
+.bar {
+    background-color: rgb(192, 192, 192);
+    width: 75%;
+    border-radius: 15px;
+}
+
+.skill {
+    background-color: lightskyblue;
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+}
+.round1{
+    /* margin: 35px 55px 0px 0px; */
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: plum;
+    z-index: -2;
+}
+.round2{
+    margin: -25px 0px 0px 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: palegreen;
+    z-index: -1;
+}
+.round3{
+    margin: -25px 0px 0px 40px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-color: lightseagreen;
+}
+.left-days{
+    background-color: pink;
+    height: 20px;
+    width: 70px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.side-bar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sec-line{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.txt-prograss{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 80%;
+}
+
+.line{
+    height: 0.1rem;
+    width: 100%;
+    background-color: black;
+    display: none;
+}
+
+@container card (max-width: 700px){
+    .sec-line{
+        flex-wrap: wrap;        
+    }
+    .line{
+        display: block;
+    }
+
+}
+@container card (max-width: 900px){
+    .txt-prograss{
+        flex-wrap: wrap;
+    }
+    .side-bar{
+        flex-wrap: wrap;        
+    }
+}
+

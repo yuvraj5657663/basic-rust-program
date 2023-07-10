@@ -1,0 +1,26 @@
+.A{
+    position: relative;
+ background-color: aqua; 
+ width: 500px;  
+ height:500px;
+
+}
+.B{position: absolute;
+    left: 50%;
+    top: 50%;
+    
+  transform: translate(-50%, -50%);
+  
+    width: 250px;
+    height: 250px;
+    background-color: rgb(215, 44, 44);
+}
+ .C{
+    position: fixed;
+   
+    margin-left: 500px;  
+    top: 0;
+
+  
+
+} 

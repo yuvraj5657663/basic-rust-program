@@ -1,0 +1,16 @@
+.bounce {
+    animation: bounce 0.4s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 40px, 0);
+    }
+}

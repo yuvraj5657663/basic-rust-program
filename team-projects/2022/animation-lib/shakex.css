@@ -1,0 +1,18 @@
+.shakex {
+    animation: shakex var(--duration) var(--count);
+}
+
+@keyframes shakex {
+    0% {
+        transform: translateX(1px);
+    }
+    25% {
+        transform: translateX(50px);
+    }
+    50% {
+        transform: translateX(1px);
+    }
+    75% {
+        transform: translateX(50px);
+    }
+}

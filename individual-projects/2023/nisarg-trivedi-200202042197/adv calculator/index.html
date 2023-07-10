@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Calculator</title>
+</head>
+<body>
+ 
+  <h2>Advance Calculator</h2>
+
+  <input type="text" id="display">
+  
+  <br>
+  <input type="button" value="AC" id="clr" onclick="buttonclear()">
+  <input id="btn" type="button" value="(" OnClick="button('(')">
+  <input id="btn" type="button" value=")" OnClick="button(')')">
+  <input type="button" value="^" onclick="button('**')" />
+  <input id="btn" type="button" value="C" OnClick="backspace(this.form)">
+
+  <br>
+  <input id="btn" type="button" value="n!" OnClick="button('!')">
+  <input id="btn" type="button" value="sqrt"onclick="Sqrt(display.value)">
+  <input type="button" value="%" onclick="button('%')" />
+  <br>
+  <input type="button" value="7" onclick="button('7')">
+  <input type="button" value="8" onclick="button('8')">
+  <input type="button" value="9" onclick="button('9')">
+  <input type="button" value="+" id="add" onclick="button('+')">
+  <br>
+  <input type="button" value="4" onclick="button('4')">
+  <input type="button" value="5" onclick="button('5')">
+  <input type="button" value="6" onclick="button('6')">
+  <input type="button" value="-" id="sub" onclick="button('-')">
+  <br>
+  <input type="button" value="1" onclick="button('1')">
+  <input type="button" value="2" onclick="button('2')">
+  <input type="button" value="3" onclick="button('3')">
+  <input type="button" value="*" id="mul" onclick="button('*')">
+  <br>
+  <input type="button" value="0" onclick="button('0')">
+  <input type="button" value="." onclick="button('.')">
+  <input type="button" value="/" id="div" onclick="button('/')">
+  <input type="button" value="=" onclick="calculate()">
+  <br>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

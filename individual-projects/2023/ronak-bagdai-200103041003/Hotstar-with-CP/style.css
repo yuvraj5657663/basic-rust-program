@@ -1,0 +1,135 @@
+/* // create a universal selector  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* // create a body css with full width background color #0c111b and font family roboto sansserif  */
+body {
+    width: 100%;
+    background-color: #0c111b;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* // create a navbar css with flex properties only */
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+/* // create a navbar css with full width height 80px padding 0 4% background color #0c111b */
+.navbar {
+    container: nav / inline-size;
+    width: 100%;
+    height: 80px;
+    padding: 0 4%;
+    background-color: #0c111b;
+}
+/* // create a navbar css with position fixed left top 0 z index 9999 */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+/* // logo height 35px */
+.logo {
+    height: 35px;
+}
+/* // nav-links display flex margin-top 10px and list style none */
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    list-style: none;
+}
+
+/* // nav-link a text decoration none color white text transform capitalize opacity 0.9 margin left 20px */
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    opacity: 0.9;
+    margin-left: 20px;
+}
+/* // nav-link a hover color lightgray */
+.nav-link a:hover {
+    color: lightgray;
+}
+.hamburger {
+    /* display: none; */
+}
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.5s;
+}
+/* // right css display block and margin left auto */
+.right {
+    display: block;
+    margin-left: auto;
+}
+
+/* // create a search css width 250px height30px border none border bottom 1px solid #aaa background color transparent color white text transform capitalize transition 0.5s outline none */
+.search {
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background-color: transparent;
+    color: white;
+    text-transform: capitalize;
+    transition: 0.5s;
+    outline: none;
+}
+
+/* // create a search focus css with width 400px and border color #1f80e0 */
+.search:focus {
+    width: 400px;
+    border-color: #1f80e0;
+}
+.sub-btn {
+    background-color: #1f80e0;
+    height: 22px;
+    width: 90px;
+    padding: 0 10px;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+}
+.login-btn {
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+/* // https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries */
+
+/* //create @container queries for the nav and make it responsive */
+@container nav (max-width: 900px) {
+    .navbar {
+        padding: 0 2%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .right {
+        display: flex;
+    }
+    .search {
+        width: 100px;
+    }
+    .search:focus{
+        width: 100px;
+    }
+}

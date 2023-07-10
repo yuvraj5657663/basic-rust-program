@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal's 2nd Flexbox</title>
+    <style>
+        .item1,
+        .footer {
+            display: flex;
+            background-color: goldenrod;
+            justify-content: center;
+            color: white;
+
+        }
+
+        .flex {
+            display: flex;
+            color: goldenrod;
+            background-color: lightgrey;
+            justify-content: space-between;
+        }
+
+        .item2 {
+            display: flex;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: white;
+            flex-grow: 3;
+            height: 6vh;
+            margin: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .place {
+            display: flex;
+            justify-content: center;
+            height: 65vh;
+            align-items: center;
+            background-color: gray;
+        }
+
+        .lock {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            margin: 3px;
+            height: 60vh;
+            width: 32vw;
+        }
+
+        img {
+            order: -1;
+            margin: 5px;
+            width: 30vw;
+            height: 32vh;
+        }
+
+        button {
+            width: 30vw;
+        }
+
+        p{
+            padding: 0 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Power Grid:Store or Homepage</h1>
+        </div>
+        <div class="flex">
+            <div class="item2">Home</div>
+            <div class="item2">About</div>
+            <div class="item2">Blog</div>
+            <div class="item2">Careers</div>
+            <div class="item2">Contact us</div>
+        </div>
+        <div class="place">
+            <div class="lock">
+                <img src="Images/computer1.jpg">
+                <p>There is some awesome content that is on the page. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Eos, error.</p>
+                    <button>Go Somewhere</button>
+            </div>
+
+            <div class="lock">
+                <img src="Images/computer3.jpg">
+                <p>This is more content than the previous box,less than the next. Lorem ipsum dolor sit amet.</p>
+                <button>Click Me</button>
+            </div>
+
+            <div class="lock">
+                <img src="Images/computer2.png">
+                <p>we have lots of content to show that content can grow,and everything can be the same
+                    size if you flexbox.Even if this has tons of text.</p>
+                <button>Do Something</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Copyright &copy; 2016</h3>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

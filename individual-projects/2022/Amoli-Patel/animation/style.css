@@ -1,0 +1,57 @@
+:root {
+    --green_color: green;
+    --yellow_color: yellow;
+    --dblue_color: rgb(3, 3, 67);
+    --border_radius: 100%;
+}
+.box div {
+    border-radius: var(--border_radius);
+}
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background: var(--dblue_color);
+}
+.largec {
+    background: var(--yellow_color);
+    position: absolute;
+    height: 150px;
+    width: 150px;
+}
+.smallc1 {
+    background: var(--green_color);
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.smallc {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    animation: smallc1 10s infinite;
+}
+@keyframes smallc1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    8.33%,
+    25% {
+        transform: rotate(90deg);
+    }
+    33.33%,
+    50% {
+        transform: rotate(180deg);
+    }
+    58.33%,
+    75% {
+        transform: rotate(270deg);
+    }
+    83.33%,
+    100% {
+        transform: rotate(360deg);
+    }
+}

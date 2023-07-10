@@ -1,0 +1,23 @@
+@import url(common.css);
+.bounceinleft {
+    animation: bounceinLeft;
+    animation-duration: var(--duration);
+    animation-iteration-count: var(--count);
+}
+
+@keyframes bounceinLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Example</title>
+    <style>
+        .container {
+            border-left: 13px solid rgb(240, 240, 240);
+            border-right: 13px solid rgb(240, 240, 240);
+        }
+
+        .item1 {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.715);
+            justify-content: center;
+            color: white;
+        }
+
+        .item2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 500px;
+        }
+
+        .item3 {
+            width: 250px;
+            background-color: lightgray;
+        }
+
+        .item31 {
+            display: flex;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.203);
+            align-items: center;
+            justify-content: space-around;
+            height: 30px;
+        }
+
+        .item4 {
+            width: 1000px;
+            background-color: rgba(211, 211, 211, 0.711);
+            padding: 0 10px;
+        }
+
+        .item5 {
+            width: 250px;
+            background-color: whitesmoke;
+            padding: 0 10px;
+        }
+
+        .item6 {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.715);
+            justify-content: space-around;
+            height: 5vh;
+        }
+
+        .item61 {
+            display: flex;
+            border: 2px solid rgba(0, 0, 0, 0.715);
+            background-color: rgba(245, 245, 245, 0.816);
+            flex-grow: 2;
+            margin: 5px;
+            justify-content: space-around;
+            align-items: center;
+            height: 3vh;
+        }
+
+        .item7 {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.715);
+            justify-content: center;
+            color: white;
+            height: 4vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>Site Wide Header</h1>
+        </div>
+        <div class="item2">
+            <div class="item3">
+                <div class="item31"><u>Home</u></div>
+                <div class="item31"><u>About</u></div>
+                <div class="item31"><u>Blog</u></div>
+                <div class="item31"><u>Career</u></div>
+                <div class="item31"><u>Contact Us</u></div>
+            </div>
+            <div class="item4">
+                <h3>This is the heading of the article</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur cumque ratione a recusandae
+                    ipsam similique sint itaque quasi sapiente libero! Porro neque maxime reprehenderit odio, architecto
+                    nobis sequi illo dolore.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, labore.
+                </p>
+            </div>
+            <div class="item5">
+                <h3>Aside Heading</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sapiente ullam nulla soluta!
+                </p>
+            </div>
+        </div>
+        <div class="item6">
+            <div class="item61">Home</div>
+            <div class="item61">About</div>
+            <div class="item61">Blog</div>
+            <div class="item61">Career</div>
+            <div class="item61">Contact Us</div>
+        </div>
+        <div class="item7">Copyright &copy; 2017 &nbsp;<u>MySite</u></div>
+    </div>
+
+</body>
+
+</html>

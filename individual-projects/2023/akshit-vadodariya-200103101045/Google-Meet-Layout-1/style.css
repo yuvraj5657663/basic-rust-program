@@ -1,0 +1,265 @@
+:root{
+    --bg-color-grey: #757575;
+}
+
+.main-container{
+    height: 96vh;
+    container: main / inline-size;
+    width: 96vw;
+    margin: auto ;
+}
+
+.full-screen{
+    display: flex;
+    gap: 1rem;
+}
+
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--bg-color-grey);
+    border-radius: 6px;
+    height: 10rem;
+    width: clamp(15rem, 28%, 24rem);
+    padding: 1em;
+}
+
+.name{
+    grid-row: 1 / -1;
+    align-self: end;
+    color: #fff;
+}
+
+.icon{
+    grid-row: 1 / -1;
+    place-self: center;
+    height: 70%;
+    width: 100%;
+    background-color: blue;
+    font-size: 4rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: #fff;
+}
+.mute-btn{
+    grid-row: 1 / -1;
+    justify-self: end;
+}
+
+.side-manu{
+    width: 46rem;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    padding: 1rem;
+    height: 34rem;
+    display: none;
+}
+
+.link{
+    text-decoration: none;
+    padding: 0.7rem;
+    color: #0000ff;
+}
+
+.link:hover{
+    padding: 0.7rem;
+    background-color: #cdcdcd;
+    border-radius: 0.5rem;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--bg-color-grey);
+    margin: 1rem auto;
+}
+
+.info-bar p{
+    text-align: center;
+}
+
+.main-container:has(.info:checked) .side-manu{
+    display: block;
+    :is(.people-bar, .chat-bar, .active-bar){
+        display: none;
+    }
+}
+
+.add-people{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 1rem auto;
+    font-weight: 600;
+}
+
+.search-people{
+    height: 2rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.people-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+
+.side-bar-name{
+    color: #000;
+}
+
+.side-bar-icon{
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.2rem;
+}
+
+.main-container:has(.people:checked) .side-manu{
+    display: block;
+    :is(.info-bar, .chat-bar, .active-bar){
+        display: none;
+    }
+}
+
+.chat-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.send-msg{
+    width: 96%;
+    border-radius: 1rem;
+    height: 1.7rem;
+    border-color: transparent;
+    background-color: #d3d3d3;
+}
+
+.chat-bar p{
+   background-color: #d3d3d3;
+   border-radius: 6px;
+   padding: 1rem;
+}
+
+.main-container:has(.chat:checked) .side-manu{
+    display: block;
+    :is(.info-bar, .people-bar, .active-bar ){
+        display: none;
+    }
+}
+
+.activiti-type{
+    display: flex;
+    margin: 2rem auto;
+    gap: 1em;
+}
+
+.activiti-type:hover{
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.txt >*{
+    margin: 0; 
+}
+
+.main-container:has(.active:checked) .side-manu{
+    display: block;
+    :is(.info-bar,.people-bar, .chat-bar){
+        display: none;
+    }
+}
+
+.bottum-manu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem ;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 96%;
+    text-align: center;
+}
+
+.bottum-center{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-center{
+    --btn-size: 3rem;
+    cursor: pointer;
+    background-color: var(--bg-color-grey);
+    border-radius: 50%;
+    display: flex;
+    height: var(--btn-size);
+    width: var(--btn-size);
+    justify-content: center;
+    align-items: center;
+}
+
+.bottum-end{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-end-last{
+    display: none;
+    margin-right: 2rem;
+}
+
+
+@container main (max-width: 850px){
+    .items{
+        flex-wrap: wrap;
+    }
+    .item{
+        width: max(15rem, 40%);
+    }
+    .btn-end{
+        display: none;
+    }
+    .btn-end-last{
+        display: block;
+    }
+    .side-manu{
+        width: 80rem;
+    }
+}
+
+@container main (max-width: 700px){
+    .item{
+        width: max(75%, 15rem);
+    }
+    .bottum-start{
+        display: none;
+    }   
+    .side-manu{
+        /* width: max(50%, 15rem); */
+        width: 100rem;
+    }     
+}
+
+@container main (max-width: 500px){
+    .items{
+        display: none;
+    }
+    .side-manu{
+        width: 100%;
+    }
+}

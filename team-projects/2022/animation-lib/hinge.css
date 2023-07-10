@@ -1,0 +1,24 @@
+.hinge {
+    animation: Hinge var(--duration) var(--count);
+    transform-origin: top left;
+}
+@keyframes Hinge {
+    from {
+        animation-timing-function: ease-in-out;
+    }
+    20%,
+    60% {
+        transform: rotate3d(0, 0, 1, 70deg);
+        animation-timing-function: ease-in-out;
+    }
+    40%,
+    80% {
+        transform: rotate3d(0, 0, 1, 55deg);
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(0, 600px, 0);
+        opacity: 0;
+    }
+}

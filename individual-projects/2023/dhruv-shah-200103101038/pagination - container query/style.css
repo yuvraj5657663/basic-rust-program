@@ -1,0 +1,63 @@
+:root{
+    --background-color:#808080;
+    --color:#fff;
+    --background:#000;
+    --size:3em;
+}
+
+.container {
+    container: page / inline-size;
+    resize: horizontal;
+    overflow: auto;
+    width: 80vw;
+    margin: 2em auto;
+}
+.item {
+    display: flex;
+    gap: 1rem;
+    place-content: center;
+}
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 6px;
+    background-color: var(--background-color);
+}
+.btn {
+    display: none;
+    background-color: var(--background-color);
+    border-radius: 6px;
+    height: var(--size);
+    width: calc(var(--size) * 2);
+}
+.list:hover,
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--color);
+}
+@container page (max-width:600px) {
+    .list {
+        display: none;
+    }
+    .item {
+        justify-content: space-between;
+    }
+    .btn {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@container page (max-width:350px) {
+    .item {
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal's 4th Example </title>
+    <style>
+        html {
+            background: url(Images/Wynton-Marsalis.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 15vw);
+            grid-template-rows: repeat(10, 15vw);
+            grid-gap: 1vw;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            text-align: right;
+        }
+
+        p {
+            color: white;
+            margin: 0;
+            font-size: 0.6em;
+        }
+
+        h3,
+        h5 {
+            margin: 0;
+            color: #ffd274;
+            font-size: 0.7em;
+        }
+
+        h4 {
+            background-color: palevioletred;
+        }
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 14vw);
+            grid-gap: 1vw;
+            list-style: none;
+        }
+
+        li {
+            padding: 10px;
+            border-radius: 4px;
+            background-color: palevioletred;
+            width: auto;
+            min-height: 13vw;
+        }
+
+        header {
+            grid-column: 2/4;
+            grid-row: 2/3;
+            align-self: center;
+        }
+
+        .tickets {
+            margin: 0;
+            width: 375px;
+            grid-row: 6/8;
+            grid-column: 5/7;
+        }
+
+        .tickets h4 {
+            margin: 0;
+        }
+
+        .tickets p {
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            grid-row: 11;
+            margin-top: 80px;
+            margin-left: 25px;
+        }
+
+        li:nth-child(1) {
+            grid-row: 1/2;
+            grid-column: 3/4;
+        }
+
+        li:nth-child(2) {
+            grid-row: 2/3;
+            grid-column: 4/5;
+        }
+
+        li:nth-child(3) {
+            grid-column: 1/2;
+            grid-row: 3/4;
+
+        }
+
+        li:nth-child(4) {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+
+        li:nth-child(5) {
+            grid-column: 4/5;
+            grid-row: 4/5;
+        }
+
+        li:nth-child(6) {
+            grid-row: 5/6;
+            grid-column: 1/2;
+        }
+
+        li:nth-child(7) {
+            grid-row: 5/6;
+            grid-column: 3/4;
+        }
+
+        li:nth-child(8) {
+            grid-row: 6/7;
+            grid-column: 2/3;
+        }
+
+        li:nth-child(9) {
+            grid-row: 7/8;
+            grid-column: 4/5;
+        }
+
+        li:nth-child(10) {
+            grid-row: 8/9;
+            grid-column: 1/2;
+        }
+
+        li:nth-child(11) {
+            grid-row: 9/10;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1><b><i>Kunal's 4th Grid Example</i></b></h1>
+    </center>
+    <div class="container">
+    
+    <img class="logo" src="Images/jazz-fest-logo.png">
+    <header>
+        <h1>Jazz at Lincoln Center</h1>
+        <h2>Spring 2007</h2>
+    </header>
+    
+
+        <ul>
+            <li>
+                <h3>Bebop Lives!</h3>
+                <p>Celebrating the best of Dizzy Gillespie and Charlie Parker</p>
+                <h5>January 26-27, 8pm</h5>
+            </li>
+            <li>
+                <h3>Jazz and Art</h3>
+                <p>The Jazz at Lincoln Center Orchestra with Wynton Marsalis & special guest Mark O'Connor</p>
+                <h5>February 22-24, 8pm</h5>
+            </li>
+            <li>
+                <h3>Dr. Michael White Quartet</h3>
+                <p>With clarinetist Dr. Michael White, banjo player Seva Venet, trumpeter Gregg Stafford, and
+                    bassist Vince Giordano</p>
+                <h5>March 13, 7:30pm</h5>
+            </li>
+            <li>
+                <h3>New York Youth Symphony: Dedicated to Diz</h3>
+                <p>with special guest Jon Faddis</p>
+                <h5>March 14, 8pm</h5>
+            </li>
+            <li>
+                <h3>Sinne Eeg</h3>
+                <p>With vocalist Sinne Eeg, pianist Jacob Christoffersen, drummer Clarence Penn, and bassist Johanes
+                    Weidenmueller</p>
+                <h5>March 15, 2:30pm</h5>
+            </li>
+            <li>
+                <h3>Late Night Session: Evan Sherman Entourage</h3>
+                <p>Tuesday-Saturday evenings, doors open at 11:15pm for Late Night Sessions.</p>
+                <h5>March 15, 11:15pm</h5>
+            </li>
+            <li>
+                <h3>An Evening with Audrey Shakir</h3>
+                <p>With vocalist Audrey Shakir, Musical Director/pianist Ted Howe, bassist Tom Kennedy, and drummer
+                    Matt Slocum</p>
+                <h5>March 16, 8pm</h5>
+            </li>
+            <li>
+                <h3>New York City Opera Concerts</h3>
+                <p>The New York City Opera Concert Series launches with the world premiere of David Hertzberg's
+                    "Sunday Morning".</p>
+                <h5>March 16, 9pm</h5>
+            </li>
+            <li>
+                <h3>Evan Sherman Big Band</h3>
+                <p>Tuesday-Saturday evenings, doors open at 11:15pm for Late Night Sessions featuring some of the
+                    most talented emerging
+                    artists in jazz</p>
+                <h5>March 17-22, 11:15pm</h5>
+            </li>
+            <li>
+                <h3>Aaron Diehl: The Real Deal</h3>
+                <p>Pianist Aaron Diehl, known fondly as “The Real Diehl” in jazz circles, has been a Jazz at Lincoln
+                    Center favorite since
+                    he was named “Outstanding Soloist”.</p>
+                <h5>March 18, 7:30pm</h5>
+            </li>
+            <li>
+                <h3>Walter Blanding: Fantasy in Blue</h3>
+                <p>With saxophonist Walter Blanding, trumpeter5Freddie Hendrix, pianist Emmet Cohen, bassist Yasushi
+                    Nakamura, and drummer
+                    Ulysses Owens, Jr.</p>
+                <h5>March 18, 8pm</h5>
+            </li>
+            <section class="tickets">
+                <h4>GET TICKETS WHILE THEY LAST!</h4>
+                <p>This would be box office information, but this is a fake poster. This content might seem real,
+                    but it's
+                    all made up so I
+                    can do a demonstration of new website technology.</p>
+            </section>
+        </ul>
+    </div>
+</body>
+
+</html>

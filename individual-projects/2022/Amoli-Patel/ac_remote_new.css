@@ -1,0 +1,65 @@
+#remote {
+    height: 600px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 50px;
+    text-align: center;
+}
+#display {
+    margin: 4px 4px 0px;
+    width: 140px;
+    padding-top: 100px;
+    border: 1px solid black;
+    height: 200px;
+    border: 1px solid black;
+    background: black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    float: left;
+}
+#indisplay {
+    border: 1px solid black;
+    height: 250px;
+    width: 120px;
+    background: green;
+    border-radius: 5px;
+    margin: -62px 9px 0px;
+}
+.option {
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.onbtn {
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 40px;
+}
+.frow,
+.srow {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 10px;
+}
+.tup,
+.eco,
+.mode,
+.winglr {
+    border: 1px solid black;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.tdown,
+.turbo,
+.fan,
+.wingup {
+    border: 1px solid black;
+    text-align: center;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.name {
+    padding-top: 50px;
+    font-style: italic;
+}

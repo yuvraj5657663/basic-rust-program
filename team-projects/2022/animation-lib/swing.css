@@ -1,0 +1,21 @@
+.swing {
+    animation: swing var(--duration) var(--count);
+    transform-origin: top center;
+}
+@keyframes swing {
+    20% {
+        transform: rotate3d(0, 0, 1, 15deg);
+    }
+    40% {
+        transform: rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+        transform: rotate3d(0, 0, 1, 7deg);
+    }
+    80% {
+        transform: rotate3d(0, 0, 1, -7deg);
+    }
+    100% {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+}

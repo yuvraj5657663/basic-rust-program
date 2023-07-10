@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hotstar</title>
+        <!-- font awesome cdn link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- link css file -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- create header with 2 unordered lists with closing tag and give class flex to every listed itmes -->
+        <header class="flex">
+            <ul class="flex nav">
+                <!-- create a logo having link -->
+                <a href="#"
+                    ><img
+                        src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+                        alt="Hotstar"
+                /></a>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Disney+</a></li>
+                <li class="kids"><a href="#">KiDS</a></li>
+            </ul>
+            <ul class="flex login-btn">
+                <!-- input with class name search and search icon in 1 list -->
+                <li class="search">
+                    <input type="text" placeholder="Search" />
+                    <i class="fas fa-search"></i>
+                </li>
+
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </header>
+    </body>
+</html>

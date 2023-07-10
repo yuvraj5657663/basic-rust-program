@@ -1,0 +1,33 @@
+.jello {
+    animation: jello var(--duration) var(--count);
+    transform-origin: var(--origin);
+}
+@keyframes jello {
+    11% {
+        transform: none;
+    }
+    22% {
+        transform: skewX(-12deg) skewY(-12deg);
+    }
+    33% {
+        transform: skewX(6deg) skewY(6deg);
+    }
+    44% {
+        transform: skewX(-3deg) skewY(-3deg);
+    }
+    55% {
+        transform: skewX(1deg) skewY(1deg);
+    }
+    66% {
+        transform: skewX(-0.7deg) skewY(-0.7deg);
+    }
+    77% {
+        transform: skewX(0.3deg) skewY(0.3deg);
+    }
+    88% {
+        transform: skewX(-0.1deg) skewY(-0.1deg);
+    }
+    100% {
+        transform: none;
+    }
+}

@@ -1,0 +1,101 @@
+.content {
+    display: flex;
+  }
+  .content:last-child .circle::before {
+    display: none;
+  }
+  .circle {
+    position: relative;
+    order: 1;
+    padding-left: 25px;
+    padding-bottom: 50px;
+  }
+  .circle::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: grey;
+  }
+  .circle:after {
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    z-index: 1;
+    border: 2px solid grey;
+    border-radius: 50%;
+  }
+  .design {
+    color: grey;
+  }
+  @container timeline (inline-size > 400px) {
+    .content {
+      padding-left: 100px;
+    }
+    .content time {
+      position: absolute;
+      right: 100%;
+      width: 100px;
+      padding-right: 20px;
+    }
+  }
+  @container timeline (inline-size > 600px) {
+    .timeline {
+      display: flex;
+      justify-content: center;
+    }
+    .content {
+      gap: 0;
+      flex: 1;
+      padding-left: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content:not(:last-child)::before {
+      content: '';
+      position: relative;
+      left: 50%;
+      top: 16px;
+      height: 2px;
+      width: 100%;
+      background-color: grey;
+    }
+    .content:after {
+      content: '';
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      z-index: 1;
+      border: 2px solid grey;
+      border-radius: 50%;
+    }
+    .content time {
+      display: inline-block;
+      position: initial;
+      width: initial;
+    }
+    .circle::before,
+    .circle:after {
+      display: none;
+    }
+  }
+  .main {
+    margin: 2rem auto;
+    container-name: timeline;
+    container-type: inline-size;
+    overflow: hidden;
+    resize: horizontal;
+    background-color: gainsboro;
+    border-radius: 20px;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+    gap: 30px;
+  }

@@ -1,0 +1,53 @@
+.page {
+    container-name: card;
+    container-type: inline-size;
+    resize: horizontal;
+    overflow: auto;
+    width: 300px;
+    margin: 2rem auto;
+}
+.colorbox {
+    height: 150px;
+    background: violet;
+    border-radius: 8px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.content {
+    text-align: center;
+}
+
+@container card (min-width: 400px) {
+    .card {
+        flex-direction: row;
+    }
+    .colorbox{
+        height:100px;
+        width:130px;
+    }
+    .content {
+        width: 100%;
+    }
+}
+@container card (min-width: 500px) {
+    .colorbox{
+        height:130px;
+        width:170px;
+    }
+}
+@container card (min-width: 800px) {
+    .colorbox{
+        display: none;
+    }
+    .card{
+        height:300px;
+        max-width:100%;
+        background: #e8b4e8;
+        border-radius: 10px;
+        align-items: center;
+    }
+}

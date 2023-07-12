@@ -1,0 +1,9 @@
+fn main() {
+    let x = one_plus(5);
+    
+    println!("The value of x is: {x}");
+}
+
+fn one_plus(x: i32) -> i32 {
+    x + 1  // no semicolon means return
+}

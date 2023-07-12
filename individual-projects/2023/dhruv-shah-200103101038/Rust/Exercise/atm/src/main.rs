@@ -1,7 +1,6 @@
-use serde_json;
-use std::fs::File;
-use std::io::Read;
-use std::io::Write;
+use serde_json::{json, Value};
+use std::fs::{File, OpenOptions};
+use std::io::{Read, Write};
 
 const PIN: u32 = 1234;
 
@@ -9,17 +8,24 @@ const PIN: u32 = 1234;
 fn load_account_balance() -> f32 {
     let mut file = File::open("account.json").expect("failed to read.");
     let mut contents = String::new();
-    file.read_to_string(&mut contents).expect("failed to read.");
-
-    let balance: f32 = contents.trim().parse().expect("failed to read");
+    file.read_to_string(&mut contents).expect("failed to read");
+   
+    let json_data: Value = serde_json::from_str(&contents).expect("Failed to parse JSON.");
+    let balance = json_data["balance"].as_f64().unwrap_or(0.0) as f32;
     balance
 }
 
-// This function saving the account balance to the "account.json" file.
+// this function saves the account balance to the "account.json" file.
 fn save_account_balance(balance: f32) {
-    let serialize = serde_json::to_string(&balance).expect("failed to serialize json");
-    let mut file = File::create("account.json").expect("failed to create file");
-    file.write_all(serialize.as_bytes()).expect("failed to write");
+    let json_data = json!({
+        "balance": balance,
+    });
+
+    let json_str = serde_json::to_string_pretty(&json_data).expect("Failed to serialize JSON.");
+    let mut file = File::create("account.json").expect("Failed to create file.");
+
+    file.write_all(json_str.as_bytes())
+        .expect("Failed to write to file.");
 }
 
 fn user_input() -> u32 {

@@ -1,4 +1,4 @@
-name: "commit | update discussions"
+name: "commit | update discussions description"
 
 on:
   push:

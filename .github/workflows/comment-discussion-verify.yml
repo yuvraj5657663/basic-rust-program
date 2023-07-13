@@ -8,3 +8,10 @@ jobs:
     if: github.event.comment.body == '/create-issue'
     uses: StaytunedLLP/training/.github/workflows/comment-create-issue.yml@main
     secrets: inherit
+  
+  test-create-issue:
+      if: github.event.comment.body == '/test-create-issue'
+      uses: StaytunedLLP/staytuned-automation/.github/workflows/dispatch/comment-create-issue.yml@main
+      secrets: inherit
+
+    

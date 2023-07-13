@@ -6,7 +6,7 @@ on:
 jobs:
   create-issue:
       if: github.event.comment.body == '/create-issue'
-      uses: StaytunedLLP/staytuned-automation/.github/workflows/dispatch-comment-create-issue.yml@main
+      uses: StaytunedLLP/staytuned-automation/.github/workflows/comment-verify.yml@main
       secrets: inherit
 
     

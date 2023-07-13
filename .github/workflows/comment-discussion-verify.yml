@@ -11,7 +11,7 @@ jobs:
   
   test-create-issue:
       if: github.event.comment.body == '/test-create-issue'
-      uses: StaytunedLLP/staytuned-automation/.github/workflows/dispatch/comment-create-issue.yml@main
+      uses: StaytunedLLP/staytuned-automation/.github/workflows/dispatch-comment-create-issue.yml@main
       secrets: inherit
 
     

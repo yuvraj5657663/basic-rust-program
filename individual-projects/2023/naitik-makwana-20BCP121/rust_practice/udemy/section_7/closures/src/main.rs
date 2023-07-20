@@ -34,15 +34,52 @@
 
 //closure as parameter to function
 
-fn div<F: Fn(f32) -> bool>(x:f32,y:f32,f:F){
-    if f(y) == true {
-        println!("answer is : {}", x/y);
-    }else {
-        println!("error");
-    }
-}
-fn main () {
-    let div_stats = |y:f32| {if y!=0.0 {true} else {false}};
+// fn div<F: Fn(f32) -> bool>(x:f32,y:f32,f:F){
+//     if f(y) == true {
+//         println!("answer is : {}", x/y);
+//     }else {
+//         println!("error");
+//     }
+// }
+// fn main () {
+//     let div_stats = |y:f32| {if y!=0.0 {true} else {false}};
 
-    div(5.0,10.0,div_stats);
+//     div(5.0,10.0,div_stats);
+// }
+
+fn main() {
+
+    let c1 = |x:u32| -> u32 {x+x};
+    let c2 = |x| {x+x};
+    let c3 = |x|x+x ;
+
+    println!("{}",c1(1));
+    println!("{}",c2(1.1));
+    println!("{}",c3(1));
+
+    let mut vec1 = vec![1,2,3];
+
+    let c4 = || {
+        println!("vector : {:?}",vec1);
+    };
+
+    println!("{:?}",vec1 );
+    c4();
+
+    let mut vec2 = vec![4,5,6];
+
+    let mut c5 = || {
+        vec2.push(7);
+    };
+    c5();
+    println!("{:?}",vec2 );
+
+    let mut vec3 = vec![7,8,9];
+
+    let mut c6 = || {
+        let vec4 = vec3;
+        println!("value of vec 3 transferred herea at vec 4 : {:?}",vec4 );
+    };
+    c6();
+
 }

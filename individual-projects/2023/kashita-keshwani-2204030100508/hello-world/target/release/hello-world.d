@@ -1,0 +1,1 @@
+C:\Users\lnebh\Desktop\training\individual-projects\2023\kashita-keshwani-2204030100508\hello-world\target\release\hello-world.exe: C:\Users\lnebh\Desktop\training\individual-projects\2023\kashita-keshwani-2204030100508\hello-world\src\main.rs

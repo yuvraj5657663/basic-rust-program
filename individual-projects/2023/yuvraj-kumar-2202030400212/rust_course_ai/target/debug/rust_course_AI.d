@@ -1,0 +1,1 @@
+C:\Users\yuvra\OneDrive\Desktop\training\individual-projects\2023\yuvraj-kumar-2202030400212\rust_course_ai\target\debug\rust_course_AI.exe: C:\Users\yuvra\OneDrive\Desktop\training\individual-projects\2023\yuvraj-kumar-2202030400212\rust_course_ai\src\main.rs

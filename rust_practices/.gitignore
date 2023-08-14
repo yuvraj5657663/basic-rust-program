@@ -1,0 +1,5 @@
+/target/           # Ignore target directory
+Cargo.lock         # Ignore Cargo.lock file
+*.exe              # Ignore all .exe files
+*.log              # Ignore all .log files
+my_secret_file.txt # Ignore a specific file

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunal's 5th Example</title>
+    <style>
+        body {
+            background-color: #A1A990;
+            color: #3C4468;
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: 2fr 25px 1fr 25px 1fr 25px 1fr 25px 1fr 25px 2fr;
+            grid-template-columns: 25px 1fr 25px 1fr 50px;
+            padding: 15em;
+            height: 80vh;
+
+        }
+
+        h1,
+        h2,
+        .item1,
+        .item2 {
+            text-align: center;
+            font-family: Helvetica, serif;
+            line-height: 0.5;
+            font-size: 6em;
+            margin: 0;
+            padding-top: 0.25em;
+            letter-spacing: 4px;
+        }
+
+        h1 {
+            grid-column: 1/5;
+            grid-row: 3/4;
+        }
+
+        h2 {
+            grid-row: 5/6;
+            grid-column: 1/5;
+            /* ADDED */
+            justify-self: center;
+            letter-spacing: -2px;
+            margin-top: 13px;
+
+            /* padding-bottom:0.10em ;
+            margin: 0; */
+
+        }
+
+        /* ADDED */
+        sup {
+            font-size: 35%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline;
+            top: -1.4em;
+            border-bottom: 0.3em solid;
+
+        }
+
+        .item1 {
+            grid-row: 7/8;
+            grid-column: 1/5;
+        }
+
+        .item2 {
+            grid-row: 9/10;
+            grid-column: 1/5;
+        }
+
+        .part1 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .part2 {
+            grid-row: 1;
+            grid-column: 3;
+        }
+
+        .part3 {
+            grid-row: 2;
+            grid-column: 1 / -1;
+        }
+
+        .part4 {
+            grid-row: 4;
+            grid-column: 1 / -1;
+        }
+
+        .part5 {
+            grid-row: 6;
+            grid-column: 1 / -1;
+        }
+
+        .part6 {
+            grid-row: 8;
+            grid-column: 1 / -1;
+        }
+
+        .part7 {
+            grid-row: 10;
+            grid-column: 1 / -1;
+        }
+
+        .part8 {
+            grid-row: 11;
+            grid-column: 3;
+        }
+
+        .circle1 {
+            grid-row: 1;
+            grid-column: 5;
+            width: 50px;
+            height: 50px;
+        }
+
+        .circle2 {
+            grid-row: 11;
+            grid-column: 5;
+            align-self: self-end;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1><b><i>Kunal's 5th Grid Example</i></b></h1>
+    </center>
+    <main>
+        <h1>FUTURISMO</h1>
+        <h2>1932 ANNO X <SUP>O</SUP></h2>
+        <h2 class="item1">S.E.MARINETTI</h3>
+            <h2 class="item2">NEL TRENTINO</h3>
+                <div class="part1">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part2">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part3">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part4">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part5">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part6">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part7">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="part8">
+                    <svg width="100%" height="100%" viewbox="0 0 100 100" preserveAspectratio="none">
+                        <rect width="100%" height="100%" fill="currentcolor"></rect>
+                    </svg>
+                </div>
+                <div class="circle1">
+                    <svg width="100%" height="100%" viewbox="0 0 50 50" preserveAspectratio="none">
+                        <circle cx="25" cy="25" r="25" fill="currentcolor"></circle>
+                    </svg>
+                </div>
+                <div class="circle2">
+                    <svg width="100%" height="100%" viewbox="0 0 50 50" preserveAspectratio="none">
+                        <circle cx="25" cy="25" r="25" fill="currentcolor"></circle>
+                    </svg>
+                </div>
+
+    </main>
+
+
+    </div>
+</body>
+
+</html>

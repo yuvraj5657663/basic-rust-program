@@ -1,0 +1,97 @@
+:root{
+    --bg-color:rgb(239, 239, 239);
+}
+.container {
+    container:stats / inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 4rem auto;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    max-width: 90%;
+}
+
+.items {
+    background-color:var(--bg-color);
+    border-radius:1rem;
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.items > * {
+    margin: 0;
+}
+
+.last {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items > :nth-child(1) {
+    font-size:1rem;
+    color: rgb(169, 154, 154);
+}
+
+.items > :nth-child(2) {
+    font-size:2rem;
+    font-weight:800;
+}
+
+.last {
+    grid-column: 2/ span 2;
+    flex-direction: row;
+    align-items: center;
+}
+
+@container stats (max-width:850px) {
+    .last {
+        grid-column: 2/3;
+        align-items: start;
+        flex-direction: column;
+    }
+
+}
+
+@container stats (max-width:750px) {
+    .layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .last {
+        grid-column: 1/2;
+    }
+
+    .items {
+        flex-direction: row;
+    }
+}
+
+@container stats (max-width:600px) {
+    .items {
+        flex-direction: column;
+    }
+}
+
+@container stats (max-width:450px) {
+    .layout {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .items {
+        flex-direction: row;
+    }
+}
+
+@container stats (max-width:250px) {
+    .items {
+        flex-direction: column;
+    }
+}

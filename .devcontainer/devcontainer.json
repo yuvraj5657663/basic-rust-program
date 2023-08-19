@@ -1,0 +1,40 @@
+{
+	"name": "Rust",
+	"dockerFile": "Dockerfile",
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "rustc --version",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bungcip.better-toml",
+				"GitHub.copilot-labs",
+				"GitHub.vscode-pull-request-github",
+				"GitHub.copilot-nightly",
+				"ms-azuretools.vscode-docker",
+				"cschleiden.vscode-github-actions",
+				"ms-vsliveshare.vsliveshare",
+				"matklad.rust-analyzer",
+				"serayuzgur.crates"
+			],
+			"settings": {
+				"editor.formatOnSave": true,
+				"files.trimTrailingWhitespace": true,
+				"editor.fontFamily": "Consolas, 'Courier New', monospace",
+    			"files.autoSave": "afterDelay",
+				"git.autofetch": true,
+				"git.autofetchPeriod": 60,
+    			"git.confirmSync": false,
+				"git.enableSmartCommit": true,
+    			"git.mergeEditor": true,
+    			"editor.formatOnPaste": true,
+			    "editor.formatOnType": true
+			}
+		}
+	}
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}

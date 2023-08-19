@@ -1,0 +1,10 @@
+name: "issue verify | comments"
+on:
+    issue_comment:
+        types: [created]
+
+jobs:
+    start-coding:
+        if: github.event.comment.body == '/start-coding'
+        uses:  StaytunedLLP/staytuned-automation/.github/workflows/dispatch-comment-discussion-start-coding.yml@main
+        secrets: inherit

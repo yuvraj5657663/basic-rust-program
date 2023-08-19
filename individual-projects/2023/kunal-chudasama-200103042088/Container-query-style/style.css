@@ -1,0 +1,40 @@
+:root{ 
+    --theme:dark-mode;
+    --font-color:dark;
+    --bg-light-color1:pink;
+    --bg-light-color2:blue;
+}
+.container{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+@container style(--theme:light-mode) and style(--font-color:light){
+    .container{
+        background:white;
+    }
+    .card{
+        background:var(--bg-light-color1);
+        color:yellow;
+    }
+    .card:nth-child(1){
+        background:var(--bg-light-color2);
+        color:black;
+    }
+}
+@container style(--theme:dark-mode)and style(--font-color:dark){
+    .container{
+        background:black;
+    }
+    .card{
+        background:lightblue;
+        color:hotpink;
+    }
+    .card:nth-child(2){
+        background:purple;
+        color:yellow;
+    }
+}
+

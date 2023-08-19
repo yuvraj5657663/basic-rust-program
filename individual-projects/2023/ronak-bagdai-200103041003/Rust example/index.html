@@ -1,0 +1,30 @@
+fn main(){
+let notes = [10, 10, 10];
+
+let notes_2000 = notes[0];
+let notes_500 = notes[1];
+let notes_100 = notes[2];
+
+
+<!-- 1. Deposit 10000 ( with 2000 notes) -->
+let deposit_amount = 10000;
+notes_2000 = add(notes[0], deposit_amount / 2000);
+
+<!-- 2. Withdraw 5000 ( any notes) -->
+let withdraw_amount = 5000;
+notes_500 = sub(notes[1], withdraw_amount / 500);
+
+notes[0] = notes_2000;
+notes[1] = notes_500;
+notes[2] = notes_100;
+
+println!("The Updated Notes of 2000, 500 and 100 are {}, {} and {}", notes[0], notes[1],notes[2] )
+}
+
+fn add(notes[0], deposit_amount / 2000){
+return notes[0] + deposit_amount / 2000;
+}
+
+fn sub(notes[1], withdraw_amount / 500){
+return notes[1] - withdraw_amount / 500;
+}

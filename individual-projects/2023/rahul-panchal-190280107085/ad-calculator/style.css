@@ -1,0 +1,76 @@
+table {
+    margin: auto;
+}
+
+body {
+    background-color: black;
+    padding-top: 100px;
+}
+
+td {
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    border: none;
+    background-color: black;
+
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(65, 63, 63);
+    cursor: pointer;
+}
+
+button[value="clear"],
+button[value="DEL"] {
+    background-color: gray;
+}
+
+button[value="equal"] {
+    background-color: gray;
+    border-radius: 3px;
+}
+
+button[value="+"],
+button[value="-"],
+button[value="*"],
+button[value="/"],
+button[value="%"],
+button[value="sqrt"],
+button[value="square"],
+button[value="perc"],
+button[value="("],
+button[value=")"],
+button[value="fact"] {
+    background-color: rgb(217, 165, 32);
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: rgb(128, 128, 128, .80);
+}
+
+button[value="+"]:hover,
+button[value="-"]:hover,
+button[value="*"]:hover,
+button[value="/"]:hover,
+button[value="%"]:hover,
+button[value="sqrt"]:hover,
+button[value="square"]:hover,
+button[value="perc"]:hover,
+button[value="("]:hover,
+button[value=")"]:hover,
+button[value="fact"]:hover {
+    background-color: rgb(217, 165, 32, .80);
+}

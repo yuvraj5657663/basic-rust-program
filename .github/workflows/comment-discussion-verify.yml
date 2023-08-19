@@ -1,0 +1,12 @@
+name: "discussion verify | comments"
+on:
+  discussion_comment:
+    types: [created]
+
+jobs:
+  create-issue:
+      if: github.event.comment.body == '/create-issue'
+      uses: StaytunedLLP/staytuned-automation/.github/workflows/comment-verify.yml@main
+      secrets: inherit
+
+    

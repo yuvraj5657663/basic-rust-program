@@ -1,0 +1,147 @@
+*{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: serif;
+}
+.acc_cont{
+    display: flex;
+    border: 2px solid black;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.search{
+    margin-left: 1100px;
+    border-left: 2px solid black;
+    padding: 10px;
+}
+#online-area{
+    display: flex; 
+    justify-content: space-between; 
+}
+.online-advice{
+    margin-left: 400px;
+    background-color: aquamarine;
+    color: blue;
+}
+.donate, .online-shop{
+    background-color: darkblue;
+    color: aliceblue;
+}
+.online-advice, .donate, .online-shop{
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bolder;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    list-style-type: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black; 
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: space-between;
+}
+.home{
+    /* border-right: 1px solid black; */
+}
+.about-us, .advice-and-support, .get-involved{
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.film-transcript{
+    /* text-align: center; */
+    font-size: 30px;
+    margin: 10px 300px;
+    color: blueviolet;
+}
+#information{
+    margin: 10px 300px;
+    font-size: larger;
+    /* margin: 15px 0px; */
+}
+h2{
+    color: blueviolet;
+    margin: 15px 0px;
+    text-decoration: underline 3px solid yellow; 
+}
+p{
+    padding-top: 15px;
+}
+.related-contant{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+}
+.in-touch{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;
+}
+footer{
+    background-color: darkviolet;
+    margin-top: 30px;
+}
+.call a, .mail a{
+    color: white;
+}
+.scope{
+    display: flex;
+    list-style-type: none;
+    font-size: larger;
+    padding-bottom: 50px;
+}
+.scope div li a{
+    color: white;
+}
+.scope div li{
+    padding-top: 10px;
+}
+h3{
+    color: yellow;
+}
+#email{
+    margin-left: 350px;
+}
+.email{
+    display: flex;
+}
+.email p{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    /* font-size: large; */
+    padding: 10px 20px;
+}
+#sign-up{
+    margin-left: 60px;
+    background-color: aqua;
+    border-radius: 50px;
+    font-size: large;
+}
+#socialmidea{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    padding-left: 300px;
+    font-size: 50px;
+    background-color: darkslateblue;
+}
+#socialmidea p{
+    /* background-color: darkslateblue; */
+    text-align: center;
+    font-size: 20px;
+    padding-left: 30px;
+}

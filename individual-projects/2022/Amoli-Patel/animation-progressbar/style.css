@@ -1,0 +1,21 @@
+body {
+    margin: 100px;
+}
+.loadingbox {
+    width: 20rem;
+    background: rgb(236, 236, 236);
+}
+.loading {
+    height: 1rem;
+    background-color: grey;
+
+    animation: move 5s linear infinite;
+}
+@keyframes move {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

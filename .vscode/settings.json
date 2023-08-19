@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "individual-projects/2023/yuvraj-kumar-2202030400212/rust_practices/Cargo.toml",
+        ".\\individual-projects\\2023\\yuvraj-kumar-2202030400212\\rust_practices\\variable_and_mutaibility\\Cargo.toml",
+        ".\\individual-projects\\2023\\yuvraj-kumar-2202030400212\\rust_practices\\variable_and_mutaibility\\constants\\Cargo.toml",
+        ".\\individual-projects\\2023\\yuvraj-kumar-2202030400212\\rust_practices\\variable_and_mutaibility\\shadowing\\Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false
+}

@@ -1,0 +1,89 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+:root {
+    --boxes-size: 100px;
+    --boxes-position1: 0px;
+    --boxes-position2: 100px;
+    --bg-position: absolute;
+}
+div.main {
+    position: relative;
+    width: calc(var(--boxes-size) * 2);
+    height: calc(var(--boxes-size) * 2);
+    margin: auto;
+}
+div.main .text {
+    position: var(--bg-position);
+    text-align: center;
+    width: calc(var(--boxes-size) * 2);
+    font-size: 35px;
+    top: 50%;
+}
+div.main .topleft {
+    display: inline-block;
+    position: var(--bg-position);
+    width: var(--boxes-size);
+    height: var(--boxes-size);
+    top: var(--boxes-position1);
+    left: var(--boxes-position1);
+    background-color: red;
+}
+div.main .topright {
+    display: inline-block;
+    position: var(--bg-position);
+    width: var(--boxes-size);
+    height: var(--boxes-size);
+    top: var(--boxes-position1);
+    left: var(--boxes-position2);
+    background-color: yellow;
+}
+div.main .bottomleft {
+    display: inline-block;
+    position: var(--bg-position);
+    width: var(--boxes-size);
+    height: var(--boxes-size);
+    top: var(--boxes-position2);
+    left: var(--boxes-position1);
+    background-color: blue;
+}
+div.main .bottomright {
+    display: inline-block;
+    position: var(--bg-position);
+    width: var(--boxes-size);
+    height: var(--boxes-size);
+    top: var(--boxes-position2);
+    left: var(--boxes-position2);
+    background-color: green;
+}
+div.main .topleft,
+.topright,
+.bottomleft,
+.bottomright {
+    animation: animate 1s infinite alternate;
+}
+
+div.main:hover .topleft {
+    --rotate: 90deg;
+    --origin: top left;
+}
+div.main:hover .topright {
+    --rotate: -90deg;
+    --origin: top right;
+}
+div.main:hover .bottomleft {
+    --rotate: -90deg;
+    --origin: bottom left;
+}
+div.main:hover .bottomright {
+    --rotate: 90deg;
+    --origin: bottom right;
+}
+@keyframes animate {
+    100% {
+        transform: rotate(var(--rotate));
+        transform-origin: var(--origin);
+    }
+}

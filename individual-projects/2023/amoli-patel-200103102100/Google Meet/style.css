@@ -1,0 +1,66 @@
+body {
+    background: black;
+    color: white;
+    --aside: aside;
+}
+.main {
+    overflow: hidden;
+    container-name: meet;
+    container-type: inline-size;
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 10px;
+}
+.card {
+    max-height: 11rem;
+    max-width: 25rem;
+    background: rgb(55, 55, 55);
+    border-radius: 1rem;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    justify-self: center;
+    border-radius: 100%;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.card p {
+    grid-row: 3/4;
+    align-self: self-end;
+}
+.microphone {
+    grid-column: 3/4;
+    align-self: self-start;
+    justify-self: end;
+    background-color: rgb(37, 37, 37);
+    border-radius: 100%;
+    padding: 10px;
+}
+.middle {
+    justify-self: center;
+}
+.middle i {
+    padding: 10px;
+    background-color: rgb(37, 37, 37);
+    border-radius: 100%;
+}
+.middle :nth-of-type(8) {
+    background-color: red;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+aside{
+    display: none;
+}

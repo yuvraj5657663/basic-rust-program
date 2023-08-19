@@ -1,0 +1,74 @@
+:root{
+    --hover-bg-color: #000000;
+    --hover-color: #ffffff;
+    --text-bg-color: #cccccc;
+    --size:3em;
+}
+
+.container{
+    container: main-section / inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: 2rem auto;
+}
+
+.items{
+    display: flex;
+    gap: 1rem;
+    place-content: center;
+    width: 80%;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--size);
+    width: var(--size);
+    background-color: var(--text-bg-color);
+    border-radius: 6px;
+}
+
+.txt{
+    background-color: var(--text-bg-color);
+    height: var(--size);
+    width: calc(2 * var(--size));
+    border-radius: 6px;
+    display: none;
+}
+
+.number:first-child{
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+}
+
+:is(.number, .txt):is(:hover, :focus){
+    background-color: var(--hover-bg-color);
+    color: var(--hover-color);
+    cursor:pointer;
+}
+
+@container main-section (max-width: 700px){
+    .number{
+        display: none;
+    }
+    .items{
+        display: flex;
+        justify-content: space-between;
+    }
+    .txt{
+        display: block;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}
+
+@container main-section (max-width: 300px){
+    .items{
+        flex-direction: column;
+    }
+    .txt{
+        width:100%;        
+    }
+}

@@ -1,0 +1,49 @@
+:root {
+    --color: #808080;
+    --background-color: lightblue;
+}
+
+.news-card {
+    container: card / inline-size;
+    overflow: hidden;
+    resize: horizontal;
+    width: 20vw;
+    padding: 1rem;
+    margin: 4rem auto 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+}
+.card-image .image {
+    width: 100%;
+    border-radius: 10px;
+}
+.card-paragraph {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    padding: 1rem;
+    gap: 0.3em;
+}
+.card-paragraph h2 {
+    font-weight: 500;
+}
+.card-paragraph p {
+    color: var(--color);
+}
+@container card (min-width: 350px) {
+    .card {
+        flex-direction: row;
+    }
+    .card-image .image {
+        width:8rem;
+    }
+}
+
+.card-paragraph > * {
+    margin: 0;
+}

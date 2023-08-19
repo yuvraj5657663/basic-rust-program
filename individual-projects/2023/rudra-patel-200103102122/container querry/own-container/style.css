@@ -1,0 +1,193 @@
+.container {
+    container-type: inline-size;
+    margin: 0 auto;
+    resize: horizontal;
+    overflow: auto;
+    border: 1px solid black;
+    container-name: main;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.list ul {
+    display: flex;
+    list-style-type: none;
+    font-size: larger;
+    gap: 2rem;
+    margin-inline-end: 2rem;
+}
+.menu {
+    display: none;
+}
+.product-info {
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+.product-discription {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.discription {
+    max-width: 50rem;
+}
+.add {
+    background-color: skyblue;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    width: 10rem;
+    color: aliceblue;
+}
+.bg-img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    display: none;
+}
+/* @container (max-width: 850px) {
+    .discription {
+        display: none;
+    }
+    .product-discription{
+        animation: pro-dis 1s ease-in-out;
+    }
+    
+    @keyframes pro-dis {
+        0% {
+            transform: translateY(0);
+        }
+    
+        55% {
+            transform: rotate(-360deg);
+        }
+    
+        58% {
+            transform: rotate(-360deg);
+        }
+    
+        65% {
+            transform: rotate(-360deg);
+        }
+    }
+}
+@container (max-width: 750px) {
+    .menu {
+        display: block;
+    }
+    .join {
+        display: none;
+    }
+}
+@container (max-width: 600px) {
+    .discription {
+        display: block;
+    }
+    .shoes-img {
+        transform: translateX(-500px);
+        transition-duration: 1.5s;
+        transition-timing-function: linear;
+    }
+}
+@container (max-width: 580px) {
+    .shoes-img {
+        display: none;
+    }
+}
+@container (max-width: 400px) {
+    .shoes-img {
+        transform: translateX(0px);
+        display: block;
+    }
+    .product-discription {
+        display: none;
+    }
+    .add {
+        display: inline;
+    }
+    .name {
+        display: none;
+    }
+} */
+
+@container main (max-width: 850px) {
+    .discription {
+        display: none;
+    }
+    @container (max-width: 600px) {
+        .discription {
+            display: block;
+        }
+    }
+}
+@container main (max-width: 850px) {
+    .product-discription {
+        animation: pro-dis 1s ease-in-out;
+    }
+
+    @keyframes pro-dis {
+        0% {
+            transform: translateY(0);
+        }
+
+        55% {
+            transform: rotate(-360deg);
+        }
+
+        58% {
+            transform: rotate(-360deg);
+        }
+
+        65% {
+            transform: rotate(-360deg);
+        }
+    }
+    @container (max-width: 400px) {
+        .product-discription {
+            display: none;
+        }
+    }
+}
+@container main (max-width: 750px) {
+    .menu {
+        display: block;
+    }
+}
+@container main (max-width: 750px) {
+    .join {
+        display: none;
+    }
+}
+@container main (max-width: 600px) {
+    .shoes-img {
+        transform: translateX(-500px);
+        transition-duration: 1.5s;
+        transition-timing-function: linear;
+    }
+    @container (max-width: 580px) {
+        .shoes-img {
+            display: none;
+        }
+    }
+    @container (max-width: 400px) {
+        .shoes-img {
+            transform: translateX(0px);
+            display: block;
+        }
+    }
+}
+@container main (max-width: 400px) {
+    .name {
+        display: none;
+    }
+}

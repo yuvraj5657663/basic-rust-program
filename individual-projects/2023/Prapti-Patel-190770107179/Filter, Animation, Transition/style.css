@@ -1,0 +1,44 @@
+.container{
+    height: 100%;
+    width: 100%;
+}
+.card{
+    background-color: rgb(113, 113, 215);
+    padding: 10px;
+    color: white;
+}
+
+@keyframes color-change {
+    from {
+      color: purple;
+    }
+    25% {
+      color: orange;
+    }
+    50% {
+      color: red;
+    }
+    75% {
+      color: blue;
+    }
+    to {
+      color: yellow;
+    }
+  }
+  
+  /* The element */
+  .card {
+    color: rgb(112, 19, 19);
+    animation-name: color-change;
+    animation-duration: 5s;
+    box-shadow: -8px 0px 8px #000000;
+  }
+
+  :hover .card{
+    background: powderblue;
+    transition:all 0.5s;
+  }
+.card-body{
+    -webkit-filter: opacity(0.8); 
+    filter: opacity(0.8);
+}

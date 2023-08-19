@@ -1,0 +1,83 @@
+:root {
+    --background-color: #d8d8d8;
+    --bg-color: #01aabc;
+    --color: #fff;
+    --size: 1rem;
+}
+.container {
+    container-name: letter;
+    container-type: inline-size;
+    resize: horizontal;
+    overflow: auto;
+    margin: var(--size) auto;
+}
+
+.letter {
+    display: flex;
+    gap: var(--size);
+    justify-content: space-between;
+    place-items: center;
+    padding: var(--size);
+    background-color: var(--background-color);
+}
+
+.letter-news > * {
+    margin: 0;
+}
+
+.heading {
+    font-size: calc(var(--size) * 2);
+    font-weight: 900;
+}
+
+.form {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.mail {
+    height: 3em;
+    border-radius: 50px;
+    min-width: var(--size) * 5;
+    width: 100%;
+    border: 2px solid transparent;
+    font-size: var(--size);
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    background-color: var(--bg-color);
+    border-radius: 50px;
+    padding: 1em 2em;
+    color: var(--color);
+    border-color: transparent;
+    min-width: 7.5rem;
+    cursor: pointer;
+}
+
+@container letter (max-width:850px) {
+    .letter {
+        flex-wrap: wrap;
+    }
+}
+
+@container letter (max-width:350px) {
+    .heading {
+        font-size: calc(var(--size) * 1.8);
+    }
+    .content {
+        display: none;
+    }
+    .label {
+        width: 100%;
+    }
+    .mail {
+        width: 100%;
+    }
+    .button {
+        width: 100%;
+    }
+}

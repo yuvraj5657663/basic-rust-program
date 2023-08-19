@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .month {
+                display: grid;
+                grid-template-columns: repeat(11, 1fr);
+                grid-template-rows: repeat(22, 70px);
+                text-align: center;
+            }
+
+            .list1 {
+                grid-row: 2 / 4;
+            }
+
+            .list2 {
+                grid-row: 4 / 6;
+            }
+
+            .list3 {
+                grid-row: 6 / 8;
+            }
+
+            .list4 {
+                grid-row: 8 / 10;
+            }
+
+            .list5 {
+                grid-row: 10 / 12;
+            }
+
+            .list6 {
+                grid-row: 12 / 14;
+            }
+
+            .list7 {
+                grid-row: 14 / 16;
+            }
+
+            .list8 {
+                grid-row: 16 / 18;
+            }
+
+            .list9 {
+                grid-row: 18 / 20;
+            }
+
+            .list10 {
+                grid-row: 20 / 22;
+            }
+
+            .event1,
+            .event2,
+            .event3,
+            .event4,
+            .event5,
+            .event6,
+            .event7 {
+                border-radius: 4px;
+            }
+
+            .event1 {
+                grid-row: 2 / 3;
+                grid-column: 6 / 7;
+                background-color: tomato;
+            }
+
+            .event2 {
+                grid-row: 4 / 6;
+                grid-column: 6 / 7;
+                background-color: lightpink;
+            }
+
+            .event3 {
+                grid-row: 6 / 9;
+                grid-column: 3 / 4;
+                background-color: blueviolet;
+            }
+
+            .event4 {
+                grid-row: 6 / 8;
+                grid-column: 10 / 11;
+                background-color: lightblue;
+            }
+
+            .event5 {
+                grid-row: 10 / 12;
+                grid-column: 7 / 8;
+                background-color: gray;
+            }
+
+            .event6 {
+                grid-row: 18 / 20;
+                grid-column: 9 / 10;
+                background-color: orange;
+            }
+
+            .event7 {
+                grid-row: 14 / 16;
+                grid-column: 5 / 6;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="month">
+            <div></div>
+            <div>
+                SUN
+                <h2>21</h2>
+            </div>
+            <div>
+                MON
+                <h2>22</h2>
+            </div>
+            <div>
+                TUE
+                <h2>23</h2>
+            </div>
+            <div>
+                WED
+                <h2>24</h2>
+            </div>
+            <div>
+                THU
+                <h2>25</h2>
+            </div>
+            <div>
+                FRI
+                <h2>26</h2>
+            </div>
+            <div>
+                SAT
+                <h2>27</h2>
+            </div>
+            <div>
+                SUN
+                <h2>28</h2>
+            </div>
+            <div>
+                MON
+                <h2>29</h2>
+            </div>
+            <div>
+                TUE
+                <h2>30</h2>
+            </div>
+            <div class="time list1">GMT-05</div>
+            <div class="time list2">8 am</div>
+            <div class="time list3">9 am</div>
+            <div class="time list4">10 am</div>
+            <div class="time list5">11 am</div>
+            <div class="time list6">12 am</div>
+            <div class="time list7">1 am</div>
+            <div class="time list8">2 pm</div>
+            <div class="time list9">3 pm</div>
+            <div class="time list10">4 pm</div>
+            <div class="event1">Lisa's Birthday</div>
+            <div class="event2">Take dog to the park 8-9am</div>
+            <div class="event3">Viedo conference 9:30-11:30am</div>
+            <div class="event4">Virtual yoga class 9-10am</div>
+            <div class="event5">Order lunch for guest 11-12pm</div>
+            <div class="event6">Docter's appiontment 3-4pm</div>
+            <div class="event7">Virtual team meeting 1-2pm</div>
+        </div>
+    </body>
+</html>

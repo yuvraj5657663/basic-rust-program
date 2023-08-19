@@ -1,0 +1,285 @@
+:root {
+    /* --bg-dark: #000000; */
+    /* --bg-dark-card1: lightblue;
+    --bg-dark-card2: lightgray; */
+    /* --theme: light-mode; */
+
+    --bg-light-card1:  darkblue;
+    --bg-light-card2:  darkgray;
+    /* --bg-light: #fffffff; */
+}
+
+.card-container{
+    /* background: var(--bg-light); */
+    height: 100vh;
+    /* color: #ffffff; */
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.card{
+    /* background: var(--bg-light-card1); */
+    height: 10rem;
+    width: 50rem;
+    
+}
+
+/* .card:nth-child(2){
+    background-color: var(--bg-light-card2);
+} */
+
+/* .card2{
+    background: var(--bg-light-card2);
+    height: 10rem;
+    width: 50rem;
+} */
+/* 
+.card-container:has(.dark-mode-toggle:checked){
+    .card{
+        background-color: lightblue;
+    }
+    .card:nth-child(2){
+        background-color: rgb(193, 20, 20);
+    }
+    .txt{
+        color: #fff;
+    }
+    background-color: #000000;
+} */
+
+body{
+    --theme: dark-mode;
+    --font-color: dark-font-color;
+}
+
+@container style(--theme: light-mode) and style(--font-color: light-font-color) {
+    .card-container{
+        background: #ffffff;
+    }
+    .card{
+        background-color: var(--bg-light-card2);
+        color: green;
+    }
+    .card:nth-child(2){
+        background-color: var(--bg-light-card1);
+        color: yellow;
+    }
+}
+
+@container style(--theme: dark-mode) and style(--font-color: dark-font-color){
+    .card-container{
+        background: #000000;
+    }
+    .card{
+        background-color: lightblue;
+        color: red
+    }
+    .card:nth-child(2){
+        background-color: rgb(193, 20, 20);
+        color: yellow;
+    }
+    /* .txt{
+        color: #fff;
+    } */
+}
+
+/* @container style(--theme: ligth-mode) and style(--font-color: light-font-color;){
+    .card-container{
+        background: #ffffff;
+    }
+    .card{
+        background-color: var(--bg-light-card2);
+        color:#ffffff;
+    }
+    .card:nth-child(2){
+        background-color: var(--bg-light-card1);
+        color: green;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+body {
+    --button: raised;
+    --font-style: italic;
+} */
+
+/* .card-container {
+    --boxed: true;
+    --display: flex;
+    /* container: card-txt; */
+} */
+
+@container style(--button: raised) {
+    .card {
+        display: flex;
+        gap: 2rem;
+        background: yellow;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* .container{
+    container: btn / inline-size;
+} */
+
+em {
+    container: font-itali;
+}
+@container font-itali style(--font-style: italic) {
+    em {
+        font-style: normal;
+    }
+}
+
+main,
+aside {
+    container: theme;
+}
+
+main {
+    --background: var(--bg-dark);
+    background: var(--bg-dark);
+    /* container: theme-color; */
+}
+
+aside {
+    --background: var(--bg-light);
+    background: var(--bg-light);
+}
+
+@container theme style(--background: var(--bg-dark)) {
+    /* styles for our dark theme */
+    a:any-link {
+        color: red;
+    }
+}
+
+@container theme style(--background: var(--bg-light)) {
+    /* styles for our light theme */
+    a:any-link {
+        color: navy;
+    }
+}
+
+@container style(--boxed: true) {
+    .card {
+        /* boxed styles */
+        border: 2px solid red;
+
+        display: flex;
+        gap: 2rem;
+        background: yellow;
+        flex-direction: column;
+    }
+}
+
+@container style(--button: raised) {
+    button {
+        border-radius: 4px;
+        padding-inline: 1em;
+        background-color: red;
+    }
+}
+/* .bubble {
+        --arrow-position: end end;
+    container: bubble;
+    border: medium solid green;
+    position: relative;
+  }
+  
+  .bubble::after {
+    content: "";
+    border: 1em solid transparent;
+    position: absolute;
+  }
+  
+  @container bubble style(--arrow-position: end end) {
+    .bubble::after {
+      border-block-start-color: inherit;
+      inset-block-start: 100%;
+      inset-inline-end: 1em;
+    }
+  }
+  
+  @container bubble style(--arrow-position: start end) {
+    .bubble::after {
+      border-block-start-color: inherit;
+      inset-block-start: 100%;
+      inset-inline-start: 1em;
+    }
+  }
+
+  @container bubble style(--arrow-position: start start) or style(--arrow-position: end start) {
+  .bubble::after {
+    border-block-end-color: inherit;
+    inset-block-end: 100%;
+  }
+}
+
+@container bubble style(--arrow-position: start end) or style(--arrow-position: end end) {
+  .bubble::after {
+    border-block-start-color: inherit;
+    inset-block-start: 100%;
+  }
+}
+
+@container bubble style(--arrow-position: start start) or style(--arrow-position: start end) {
+  .bubble::after {
+    inset-inline-start: 1em;
+  }
+}
+
+@container bubble style(--arrow-position: end start) or style(--arrow-position: end end) {
+  .bubble::after {
+    inset-inline-end: 1em;
+  }
+} */
